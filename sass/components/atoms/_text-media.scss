@@ -1,0 +1,22 @@
+.image {
+
+    position: relative;
+    height: 0;
+    overflow: hidden;
+  
+    &--square {
+      padding-top: 100%;
+    }
+  
+    &--landscape {
+      padding-top: calc((2 / 3) * 100%);
+    }
+  
+    &--portrait {
+      padding-top: calc((3 / 2) * 100%);
+    }
+  
+    &__caption {
+      margin: 1em 0;
+    }
+  }

@@ -1,0 +1,25 @@
+.cta {
+
+  &__icon {
+    max-width: 96px;
+  }
+
+  &__buttons {
+    text-align: right;
+
+    .buttons {
+      margin-top: 0;
+    }
+
+    @media screen and (max-width: 567px) {
+      text-align: left;
+      margin-top: 30px;
+    }
+  }
+
+  &--vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

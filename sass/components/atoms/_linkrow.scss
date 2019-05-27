@@ -1,0 +1,23 @@
+.linkrow {
+  display: flex;
+  width: 100%;
+  border-top: 1px solid rgba($color-white, 0.2);
+
+  padding-right: 1rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  transition: 200ms ease-in-out;
+
+  &:last-of-type {
+    border-bottom: 1px solid rgba($color-white, 0.2);
+  }
+
+  @media screen and (min-width: 768px) {
+    &:hover {
+      padding-right: 2rem;
+      padding-left: 1rem;
+    }
+  }
+}

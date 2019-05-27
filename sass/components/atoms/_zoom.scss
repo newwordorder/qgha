@@ -1,0 +1,15 @@
+.zoom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__container {
+    margin: auto;
+    overflow: hidden;
+  }
+
+  &__img {
+    opacity: 1;
+    transform: scale(0.95);
+  }
+}

@@ -1,0 +1,23 @@
+.space-below {
+
+  &--none {
+    margin-bottom: 0;
+  }
+
+  &--sm {
+    margin-bottom: 25px;
+  }
+
+  &--md {
+    margin-bottom: 50px;
+  }
+
+  &--lg {
+    margin-bottom: 100px;
+  }
+
+  &--xlg {
+    margin-bottom: 200px;
+  }
+
+}

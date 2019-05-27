@@ -1,0 +1,20 @@
+@mixin clickable($border-color: transparent, $haveBorder: true) {
+
+  transition: 300ms ease-in-out;
+
+  @if $haveBorder==true {
+    border: 1px solid transparent;
+  }
+
+  @media screen and (min-width: 768px) {
+    &:hover {
+      transform: translate(0, -4px);
+      box-shadow: 0 4px 6px 0 rgba($color-dark, 0.4);
+
+      @if $haveBorder==true {
+        border: 1px solid $border-color;
+      }
+    }
+  }
+
+}

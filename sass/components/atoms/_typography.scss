@@ -1,0 +1,164 @@
+.page-title {
+  font-size: 4.5rem;
+  line-height: 1em;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  @include font-light;
+  color: $color-heading;
+
+  @media screen and (max-width:425px) {
+    font-size: 2rem;
+  }
+
+  @media screen and (min-width: 425px) and (max-width:992px) {
+    font-size: 2.5rem;
+  }
+
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
+    font-size: 3.5rem;
+  }
+
+
+}
+
+.line {
+  display: block;
+}
+
+.outerSpan {
+  display: block;
+  overflow: hidden;
+}
+
+.lipsum {
+  overflow: hidden;
+
+  span {
+    display: block;
+  }
+}
+
+body {
+  @include font-regular;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  line-height: 1.618;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include font-bold;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+p {
+  margin-bottom: 1.25rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 2.75rem 0 1rrem;
+  line-height: 1.15;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: $color-primary !important;
+  margin-bottom: 1rem;
+}
+
+.lead {
+  font-size: 1.25rem;
+}
+
+small,
+.text_small {
+  font-size: 0.8rem;
+}
+
+.footer-cta {
+  h4 {
+    @include font-light;
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-top: 0rem;
+  }
+}
+
+
+section {
+  ul {
+    margin-left: 0;
+    padding-left: 0;
+    list-style-type: none;
+
+    li {
+      padding-left: 1.5rem;
+      margin-bottom: 0.5rem;
+      position: relative;
+
+      :last-of-type {
+        margin-bottom: 0;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        height: 0.3rem;
+        width: 0.3rem;
+        background-color: $color-primary;
+        border-radius: 0.5rem;
+        left: 0;
+        top: 0.6rem;
+      }
+    }
+  }
+
+  &.imagebg {
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      color: $color-white;
+    }
+  }
+}

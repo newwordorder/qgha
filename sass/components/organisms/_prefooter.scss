@@ -1,0 +1,16 @@
+.footer-cta {
+  &__content {
+    padding-bottom: 0;
+  }
+}
+
+.pre-footer-image {
+  display: flex;
+  flex-direction: column;
+
+  img {
+    margin-bottom: 0;
+    bottom: 0;
+    position: relative;
+  }
+}

@@ -1,0 +1,16 @@
+.link {
+  background: transparent;
+  color: $primary;
+  font-size: 0.825em;
+  font-weight: 700;
+  font-family: $font-opensans;
+  text-transform: uppercase;
+
+  &:hover {
+    color: darken($primary, 10%);
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+}

@@ -1,0 +1,28 @@
+$color-primary: #009BDA; // Thats a sample how you could change a BootStrap variable.
+$color-secondary: #FFD300;
+$color-dark: #1E2F5C;
+$color-light: #F1F5F4;
+$color-heading: #1E2F5C;
+$color-body: #5A6174;
+
+$color-white: #fff;
+
+
+@mixin font-regular {
+  font-family: nimbus-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin font-bold {
+  font-family: nimbus-sans, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@mixin font-light {
+  font-family: nimbus-sans, sans-serif;
+  font-weight: 300;
+
+  font-style: normal;
+}

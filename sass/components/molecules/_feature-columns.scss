@@ -1,0 +1,81 @@
+.feature-column {
+
+  margin: 1.5rem 0 0 0;
+  text-decoration: none;
+  color: $color-body;
+
+  &--boxed {
+    border: 1px solid #efefef;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: #fff;
+
+    &__inner {
+      padding: 20px;
+    }
+
+    .feature-column__image {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    h1,
+    .h1,
+    h2,
+    .h2,
+    h3,
+    .h3,
+    h4,
+    .h4,
+    h5,
+    .h5,
+    h6,
+    .h6,
+    p {
+      color: $color-dark !important;
+    }
+
+    h6,
+    .h6 {
+
+      color: $color-heading !important;
+    }
+
+    p {
+      color: $color-body !important;
+    }
+
+    .lead {
+      color: $color-heading !important;
+    }
+
+    a:not(.btn) {
+      color: $color-primary !important;
+
+      &:hover {
+        color: darken($color-primary, 10%) !important;
+      }
+    }
+  }
+
+  strong {
+    text-transform: uppercase;
+  }
+
+  * {
+    text-decoration: none;
+  }
+
+  &__image,
+  &__icon {
+    margin-bottom: 1rem;
+  }
+
+  &__icon {
+    width: 70px;
+  }
+}
+
+.rounded {
+  border-radius: 3px;
+}

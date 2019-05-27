@@ -1,0 +1,122 @@
+.btn {
+  font-size: 0.875em;
+  font-weight: 700;
+  padding: 0.75rem 1rem;
+  color: $color-primary;
+  border-radius: 100px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 200ms ease-in-out;
+
+  &:visited {
+    color: $color-primary;
+  }
+
+  &--solid {
+    background: $color-dark;
+    color: $color-white;
+
+    a {
+      color: $color-white;
+      text-transform: uppercase;
+    }
+
+    &:visited {
+      color: $color-white;
+    }
+
+    @media screen and (min-width: 992px) {
+      &:hover {
+        background: darken($color-primary, 10%);
+        color: $color-white;
+        box-shadow: 0 2px 6px 0 rgba($color-dark, 0.3);
+        transform: translate(0, -2px) !important;
+      }
+    }
+  }
+
+  &--outline {
+    background: $color-white;
+    color: $color-primary;
+
+    &:visited {
+      color: $color-primary;
+    }
+
+    @media screen and (min-width: 992px) {
+
+      &:hover {
+        background: $color-primary;
+        color: $color-white;
+        box-shadow: 0 2px 6px 0 rgba($color-dark, 0.3);
+        transform: translate(0, -2px) !important;
+      }
+    }
+  }
+
+  &--link {
+    background: transparent;
+    color: $color-primary;
+
+    &:visited {
+      color: $color-primary;
+    }
+
+    @media screen and (min-width: 992px) {
+
+      &:hover {
+        color: darken($color-primary, 10%);
+      }
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+
+    &:first-of-type {
+      padding: 0.8em 0em;
+    }
+  }
+
+  &--close {
+    background: $color-primary;
+    color: $color-white;
+    width: 2.5rem;
+    height: 2.5rem;
+    position: relative;
+    overflow: hidden;
+
+    svg {
+      width: 1rem;
+      height: 1rem;
+      transition: 200ms ease-in-out;
+    }
+
+    &:before {
+      content: "CLOSE";
+      @include font-bold;
+      position: absolute;
+      left: -3.2rem;
+      top: 0.5rem;
+      font-size: 1rem;
+      width: 3rem;
+      transition: 200ms ease-in-out;
+    }
+
+    @media screen and (min-width:992px) {
+      &:hover {
+        width: 7rem;
+        padding-left: 5rem;
+
+        svg {
+          transform: rotate(-90deg);
+        }
+
+        &:before {
+          left: 1rem;
+        }
+      }
+    }
+
+  }
+}

@@ -1,0 +1,17 @@
+a {
+  color: $color__link;
+
+
+  &:hover,
+  &:focus,
+  &:active {
+    cursor: pointer;
+  }
+
+  &:focus {}
+
+  &:hover,
+  &:active {
+    outline: 0;
+  }
+}

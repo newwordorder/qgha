@@ -1,0 +1,43 @@
+.project-thumb {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 50%;
+
+  @include media-breakpoint-down(sm) {
+    padding-bottom: 100%;
+  }
+
+  * {
+    transition: 0.2s;
+  }
+
+  &--large {
+    width: 100%;
+
+  }
+
+  &--small {
+    width: 50%;
+
+
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    padding: 1.85714286em;
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+
+    & * {
+      color: #fff;
+    }
+  }
+
+  &:hover .background-image-holder {
+    transform: scale(1.1);
+  }
+}

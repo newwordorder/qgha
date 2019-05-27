@@ -1,0 +1,31 @@
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 1rem;
+  max-width: 1140px;
+
+  &--wide {
+    max-width: 1400px;
+  }
+
+  &--narrow {
+    max-width: 940px;
+  }
+
+  @media screen and (max-width:1200px) {
+    max-width: 960px;
+  }
+
+  @media screen and (max-width:992px) {
+    max-width: 720px;
+  }
+
+  @media screen and (max-width:768px) {
+    max-width: 540px;
+  }
+
+  @media screen and (max-width:576px) {
+    max-width: 100%;
+  }
+
+}

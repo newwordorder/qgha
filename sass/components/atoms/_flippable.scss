@@ -1,0 +1,41 @@
+.flippable {
+  display: flex;
+  align-items: center;
+
+  &__text {
+    order: 1;
+  }
+
+  &__image {
+    order: 2;
+
+    @media screen and (max-width:576px) {
+      margin-bottom: 30px;
+    }
+  }
+
+
+  &--flip {
+    .flippable__text {
+      order: 2;
+    }
+
+    .flippable__image {
+      order: 1;
+
+    }
+
+
+
+  }
+
+  @media screen and (max-width:576px) {
+    &__text {
+      order: 2;
+    }
+
+    &__image {
+      order: 1;
+    }
+  }
+}

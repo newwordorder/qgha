@@ -1,0 +1,44 @@
+.bg {
+
+  &--none {
+    background-color: transparent;
+  }
+
+  &--light {
+    background-color: $color-light;
+  }
+
+  &--dark {
+    background-color: $color-dark;
+
+    * {
+      color: #fff;
+    }
+  }
+
+  &--primary {
+    background-color: $color-primary;
+
+    * {
+      color: #fff;
+    }
+
+
+    .btn--solid {
+      background-color: darken($color-primary, 10%);
+      color: #fff;
+
+      &:hover {
+        background-color: darken($color-primary, 20%);
+      }
+
+      &:focus {
+        background-color: darken($color-primary, 20%);
+        color: #fff;
+        border: 0;
+      }
+    }
+
+  }
+
+}

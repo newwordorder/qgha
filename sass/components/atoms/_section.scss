@@ -1,0 +1,41 @@
+section {
+
+  position: relative;
+
+  &.space {
+
+    &--none {
+      padding: 0;
+    }
+
+    &--sm {
+      padding: 25px 0;
+    }
+
+    &--md {
+      padding: 50px 0;
+    }
+
+    &--lg {
+      padding: 100px 0;
+    }
+
+    &--xlg {
+      padding: 200px 0;
+    }
+
+  }
+
+  &.bg-effect {
+    &--ken-burns {
+      overflow: hidden;
+
+      &>.background-image-holder,
+      &>img:only-child {
+        animation: kenBurns 15s ease alternate infinite;
+        -webkit-animation: kenBurns 15s ease alternate infinite;
+      }
+    }
+  }
+
+}

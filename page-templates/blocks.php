@@ -34,6 +34,7 @@ if( have_rows('blocks') ) { $blockCount = 0;
          get_template_part( 'page-templates/blocks/two-columns' );
          get_template_part( 'page-templates/blocks/inline-menu' );
          get_template_part( 'page-templates/blocks/people' );
+         get_template_part( 'page-templates/blocks/events' );
 
          $GLOBALS['blockCount'] = $blockCount;
          $GLOBALS['sectionCount'] = $sectionCount;

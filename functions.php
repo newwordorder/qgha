@@ -177,3 +177,4 @@ require get_template_directory() . '/inc/linkrow-shortcode.php';
 require get_template_directory() . '/inc/feature-checkbox.php';
 require get_template_directory() . '/inc/custom-excerpt.php';
 require get_template_directory() . '/inc/loadmore.php';
+require get_template_directory() . '/inc/editor.php';

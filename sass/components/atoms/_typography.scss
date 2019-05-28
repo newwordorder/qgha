@@ -46,7 +46,7 @@ body {
 }
 
 p {
-  line-height: 1.618;
+  line-height: 1.75;
 }
 
 h1,
@@ -98,13 +98,21 @@ h5 {
 
 h6 {
   font-size: 0.875rem;
+  line-height: 0.875rem;
   text-transform: uppercase;
   color: $color-primary !important;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
 }
+
 
 .lead {
   font-size: 1.25rem;
+
+  &.m-small {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
 }
 
 small,

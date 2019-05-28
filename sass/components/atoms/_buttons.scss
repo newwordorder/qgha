@@ -36,8 +36,9 @@
   }
 
   &--outline {
-    background: $color-white;
+    background: transparent;
     color: $color-primary;
+    border: 1px solid $color-primary;
 
     &:visited {
       color: $color-primary;

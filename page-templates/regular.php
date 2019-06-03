@@ -18,7 +18,7 @@ $headerText = get_field('header_text');
 <section id="sub-header"
 
 class="page-header page-header--page bg-effect--<?php echo $backgroundEffect ?> imagebg"
-data-overlay="0"
+data-overlay="<?php echo $imageOverlay; ?>"
 >
 
   <?php if( !empty($image) ):

@@ -17,7 +17,7 @@ if( get_row_layout() == 'blog_posts' ):
       justify-content:space-between;
       margin-bottom:1rem;">
             <h3>Latest News</h3>
-            <a class="btn btn--solid" href="#">All News</a>
+            <a class="btn btn--solid" href="<?php echo get_home_url(); ?>/news">All News</a>
       </div>
 </div>
         
@@ -75,7 +75,7 @@ if( get_row_layout() == 'blog_posts' ):
       margin-bottom:1rem;">
             <h3>Latest News</h3>
 
-        <a class="btn btn--solid" href="#">All News</a>
+        <a class="btn btn--solid" href="<?php echo get_home_url(); ?>/events">All News</a>
       </div>
     </div>
   <div class="row" style="position:relative;">

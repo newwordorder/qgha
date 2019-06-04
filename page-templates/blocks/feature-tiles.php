@@ -22,7 +22,7 @@ if( get_row_layout() == 'feature_tiles' ):
 
         <div class="col-md-<?php echo $columns; ?> ">
           <a href="<?php echo $link ?>">
-            <div class="feature-tile rounded feature-tile--<?php echo $type ?> hover-element" data-overlay="3">
+            <div class="feature-tile rounded feature-tile--<?php echo $type ?> hover-element" data-scrim="8">
                 <div class="hover-element__initial">
                   <?php
                   $image = get_sub_field('background_image');
@@ -40,7 +40,7 @@ if( get_row_layout() == 'feature_tiles' ):
                   <?php endif; ?>
                 </div>
                 
-                  <div class="hover-element__reveal" data-overlay="8"></div>
+                  <div class="hover-element__reveal" data-scrim="8"></div>
                   <div class="feature-tile__content">
                     <div class="chevron-container">
                       <?php echo $text ?>
@@ -49,12 +49,6 @@ if( get_row_layout() == 'feature_tiles' ):
                   </div>
               </div>
             </a>
-
-
-
-
-
-
             </div>
         <?php endwhile; ?>
       </div>

@@ -7,7 +7,7 @@ if( get_row_layout() == 'people' ):?>
           <?php if( $posts ): ?>
             <?php foreach( $posts as $post ): // variable must be called $post (IMPORTANT) ?>
             <?php setup_postdata($post); ?>
-            <div class="col-lg-4 people__container">
+              <div class="people__container col-lg-4">
               <div class="row people">
                 <div class="col-4">
                   <?php $image = get_field('image'); ?>

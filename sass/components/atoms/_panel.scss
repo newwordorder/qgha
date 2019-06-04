@@ -10,7 +10,7 @@
   .accordian-title {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     @include font-bold;
     padding-right: 2rem;
 
@@ -29,7 +29,8 @@
 
   svg {
     font-size: 1.2rem;
-    margin: 1rem;
+    margin: 0 1rem;
+    margin-top: 0.25rem;
     transition: 300ms ease-in-out;
 
     &.rotate {

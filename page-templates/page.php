@@ -19,7 +19,7 @@ $headerText = get_field('header_text');
 
 $slides = get_field('slides');
 ?>
-<section id="sub-header" class="page-header page-header--page  bg--light bg-effect--<?php echo $backgroundEffect ?>">
+<section id="sub-header" class="page-header page-header--home  bg--light bg-effect--<?php echo $backgroundEffect ?>">
   <div class="svg-container">
     <?php get_template_part('page-templates/bgSVG'); ?>
   </div>

@@ -6,6 +6,12 @@
 
   &--light {
     background-color: $color-light;
+
+    &.page-header--page {
+      * {
+        color: $color-dark !important;
+      }
+    }
   }
 
   &--dark {

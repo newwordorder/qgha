@@ -1,7 +1,6 @@
 import anime from 'animejs';
 
 const peoplecard = () => {
-  console.log();
   if (getPeopleCards()) {
     getPeopleCards().forEach(person => {
       setUpOpenListener(person);
@@ -68,6 +67,7 @@ const makeGhostReal = () =>
 const toggleClasses = person =>
   new Promise(resolve => {
     person.classList.toggle('active');
+    person.parentNode.classList.toggle('active');
     resolve();
   });
 
@@ -140,6 +140,7 @@ const animateCardOut = person =>
       easing: 'cubicBezier(.5, .05, .1, .3)',
     });
     tl.finished.then(() => {
+      person.parentNode.classList.toggle('active');
       person.parentNode.removeChild(person);
       resolve();
     });

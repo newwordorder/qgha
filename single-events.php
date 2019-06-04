@@ -30,7 +30,7 @@ get_header();
 		<div class="col-md-12">
       <h6><?php echo get_field('date'); ?></h6>
 		  <h1 class="page-title" style="display:block;"><?php the_title(); ?></h1>
-      <a href="#" class="btn btn--outline">RSVP</a>
+      <a href="<?php echo get_field('rsvp_link'); ?>" class="btn btn--outline">RSVP</a>
 		</div>
 
 	</div>
@@ -57,7 +57,6 @@ get_header();
                 <p class="lead m-small"><?php echo get_field('time'); ?></p>
                 <h6>Location</h6>
                 <p class="lead m-small"><?php echo get_field('location'); ?></p>
-
               </div>
             </div>
           </div>

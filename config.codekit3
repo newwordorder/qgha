@@ -2084,12 +2084,12 @@
 		"oAP": "/page-templates/events.php",
 		"oF": 0
 		},
-	"/page-templates/News.php": {
+	"/page-templates/news.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/page-templates/News.php",
+		"oAP": "/page-templates/news.php",
 		"oF": 0
 		},
 	"/page-templates/page.1.php": {

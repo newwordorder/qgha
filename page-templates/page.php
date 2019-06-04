@@ -14,7 +14,6 @@ $imageOverlay = get_field('image_overlay');
 $backgroundImage = get_field('background_image');
 $image = $backgroundImage['background_image'];
 $imageOverlay = $backgroundImage['image_overlay'];
-$imageOverlay = $backgroundImage['image_overlay'];
 $backgroundEffect = $backgroundImage['background_effect'];
 $headerText = get_field('header_text');
 

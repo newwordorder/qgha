@@ -1,4 +1,4 @@
-<?php // BLOG POSTS
+<?php // Events
 
 if( get_row_layout() == 'events' ):
 
@@ -17,7 +17,7 @@ if( get_row_layout() == 'events' ):
       justify-content:space-between;
       margin-bottom:1rem;">
             <h3>Events</h3>
-            <a class="btn btn--solid" href="#">More Events</a>
+            <a class="btn btn--solid" href="<?php echo get_home_url(); ?>/events">More Events</a>
       </div>
 </div>
         
@@ -70,7 +70,7 @@ if( get_row_layout() == 'events' ):
       margin-bottom:1rem;">
             <h3>Latest Events</h3>
 
-        <a class="btn btn--solid" href="#">All Events</a>
+        <a class="btn btn--solid" href="<?php echo get_home_url(); ?>/events">All Events</a>
       </div>
     </div>
   <div class="row" style="position:relative;">

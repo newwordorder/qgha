@@ -1,6 +1,6 @@
 <?php
 /**
-* Template Name: News
+* Template Name: Events
  *
  * @package understrap
  */
@@ -46,8 +46,9 @@ data-overlay="0"
 		<?php
 				$categories = get_categories( array(
 						'orderby' => 'name',
-						'order'   => 'ASC'
-				) );
+						'order'   => 'ASC',
+						'post_type' => 'events',
+						) );
 				echo '<div class="blog-categories">';
 				echo '<h6 style="margin-bottom:0;">'
 				?><a style="text-decoration:none;  href="<? echo get_site_url(); ?>/news">All</a>
@@ -77,7 +78,8 @@ data-overlay="0"
 	$args = array(
 		'posts_per_page' => 1,
 		'meta_key' => 'meta-checkbox',
-		'meta_value' => 'yes'
+		'meta_value' => 'yes',
+		'post_type' => 'events',
 	);
 
 	$featured = new WP_Query($args);
@@ -108,7 +110,9 @@ if ($featured->have_posts()):?>
       <?php
             // the query
             $the_query = new WP_Query( array(
-                'posts_per_page' => 9,
+								'posts_per_page' => 9,
+								'post_type' => 'events',
+
             ));
           ?>
         <?php if ( $the_query->have_posts() ) : ?>
@@ -151,7 +155,7 @@ if ($featured->have_posts()):?>
 
 			<!-- The pagination component -->
 <div class="row justify-content-center" style="margin-top: 2rem;">
-			<?php $query = new WP_Query( array('posts_per_page' => 9 )); // you can remove this line if everything works for you			// don't display the button if there are not enough posts
+			<?php $query = new WP_Query( array('posts_per_page' => 9, 'post_type' => 'events' )); // you can remove this line if everything works for you			// don't display the button if there are not enough posts
 			if (  $query->max_num_pages > 1 )
 				echo '<div class="btn btn--solid loadmore m-auto">Load More</div>';
 			?>

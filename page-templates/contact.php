@@ -17,7 +17,7 @@ $headerText = get_field('header_text');
 <?php while ( have_posts() ) : the_post(); ?>
 <section id="sub-header"
 
-class="page-header page-header--page bg--light bg-effect--<?php echo $backgroundEffect ?> imagebg"
+class="page-header page-header--page bg-effect--<?php echo $backgroundEffect ?> imagebg"
 data-overlay="<?php echo $imageOverlay; ?>"
 >
 

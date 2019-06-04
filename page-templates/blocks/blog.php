@@ -90,7 +90,7 @@ if( get_row_layout() == 'blog_posts' ):
           <article class="col-sm-6 col-md-4 text-center blog-tile">
 
             <a href="<?php the_permalink(); ?>" class="">
-              <div class="blog-tile__thumb ">
+              <div class="blog-tile__thumb " data-scrim="8">
                 <?php
                 $backgroundImage = get_field('background_image');
 

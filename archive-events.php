@@ -1,46 +1,100 @@
 <?php
 /**
- * The template for displaying archive page
+ * The template for displaying archive pages.
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package New_theme
+ * @package understrap
  */
 
 get_header();
 ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
 
-		<?php if ( have_posts() ) : ?>
+<div class="wrapper blog-feed" id="index-wrapper">
 
-			<?php
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
 
-				/*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_type() );
+	<div class="container" id="content" tabindex="-1">
 
-			endwhile;
 
-			the_posts_navigation();
 
-		else :
 
-			get_template_part( 'template-parts/content', 'none' );
+				<?php if ( have_posts() ) : ?>
 
-		endif;
-		?>
+					<?php /* Start the Loop */ ?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+					<div id="posts_row" class="row">
 
-<?php
-get_sidebar();
-get_footer();
+					<?php while ( have_posts() ) : the_post(); ?>
+						<div class="col-sm-4">
+						
+
+							<article class="blog-tile">
+							<a href="<?php the_permalink(); ?>" class="blog-tile__link"></a>
+								<div class="blog-tile__thumb">
+									<?php
+									$workImage = get_field('tile_image');
+
+									if( !empty($workImage) ):
+
+										// vars
+										$url = $workImage['url'];
+										$alt = $workImage['alt'];
+
+										$size = '600x400';
+										$thumb = $workImage['sizes'][ $size ];
+										$width = $workImage['sizes'][ $size . '-width' ];
+										$height = $workImage['sizes'][ $size . '-height' ];
+
+										?>
+										<div class="background-image-holder ">
+											<img class="rounded" src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
+										</div>
+									<?php endif; ?>
+								</div>
+								<div class="blog-tile__content">
+                  
+                  <h5><?php the_title(); ?></h5>
+                    <?php if (get_field('client')) : ?>
+                      <span class="blog-tile__category">
+                    <?php the_field('client'); ?>
+                    </span>	
+                  <?php endif; ?>
+									
+									
+									
+								</div>
+							</article>
+
+
+										</div>
+
+					<?php endwhile; ?>
+
+					</div>
+
+				<?php else : ?>
+
+					<?php get_template_part( 'loop-templates/content', 'none' ); ?>
+
+				<?php endif; ?>
+
+
+
+
+			<!-- The pagination component -->
+			<div class="row justify-content-center mt-4 p-4">
+			<?php global $wp_query; // you can remove this line if everything works for you
+			
+			// don't display the button if there are not enough posts
+			if (  $wp_query->max_num_pages > 1 )
+				echo '<div class="btn btn--outline loadmore m-auto">More posts</div>'; 
+			?>
+		
+</div>
+</div><!-- Container end -->
+
+</div><!-- Wrapper end -->
+
+<?php get_footer(); ?>
+

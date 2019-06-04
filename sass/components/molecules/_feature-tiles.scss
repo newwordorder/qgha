@@ -48,11 +48,11 @@
 
   &:hover .background-image-holder {
     transform: scale(1.1);
-    transition: 1200ms ease-in-out;
+    transition: 600ms ease-in-out;
   }
 
   .background-image-holder {
-    transition: 1200ms ease-in-out;
+    transition: 600ms ease-in-out;
 
   }
 
@@ -75,8 +75,4 @@
     }
   }
 
-  &:hover {
-    box-shadow: 0 4px 10px 0 rgba($color-dark, 0.3);
-    transform: translate(0, -4px);
-  }
 }

@@ -3,7 +3,7 @@
         $layout = get_sub_field('layout');
         $text = get_sub_field('text_block');
         $icon = get_sub_field('icon');
-        $spaceBelow = get_sub_field('text_image_space_below');
+        $spaceBelow = get_sub_field('space_below');
 ?>
   <div class="container space-below--<?php echo $spaceBelow ?>">
       <div class="row align-items-center justify-content-center">

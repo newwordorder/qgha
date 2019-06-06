@@ -1,0 +1,17 @@
+.blog-categories {
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-end;
+    @media screen and (max-width: 768px) {
+        margin-top: 2rem;
+        justify-content: flex-start;
+      }
+    a {
+        margin-right: 1rem;
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+}

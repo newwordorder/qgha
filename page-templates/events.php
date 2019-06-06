@@ -119,8 +119,8 @@ if ($featured->have_posts()):?>
 					<?php while ( $the_query->have_posts() ) : $the_query->the_post(); 
 					    $backgroundImage = get_field('background_image');
 					?>
-          <a href="<?php the_permalink(); ?>" class="col-md-4 feature-column blog-column<?php if(empty($backgroundImage)): echo '--both'; endif;  ?>">
-          <article class="">
+          <a href="<?php the_permalink(); ?>" class="col-md-4 feature-column ">
+          <article class="blog-column<?php if(empty($backgroundImage)): echo '--both'; endif;  ?>">
                 <?php
  
                 if( !empty($backgroundImage) ):
@@ -133,12 +133,14 @@ if ($featured->have_posts()):?>
                   $height = $backgroundImage['sizes'][ $size . '-height' ];
                   ?>
                     <img class="feature-column__image rounded" data-src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
-                <?php endif; ?>
-                    <h6><?php $category = get_the_category(); echo $category[0]->name; ?></h6>
+								<?php endif; ?>
+								<div class="blog-column__text">
+                    <h6><?php the_field('date'); ?></h6>
                     <p class="lead"><?php the_title(); ?></p>
 										<?php if(empty($backgroundImage)): ?>
 											<p><?php the_excerpt(); ?></p>
 										<?php endif; ?>
+								</div>
             </article>
                 
               </a>

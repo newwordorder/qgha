@@ -31,8 +31,8 @@ data-overlay="0"
   <?php endif; ?>
 
 <div class="container">
-  <div class="row">
-    <div class="col-md-6" style="padding: 12rem 0 8rem; display:flex; flex-direction:row; align-items:center">
+  <div class="row align-items-center page-header__content">
+    <div class="col-md-6" >
     <?php if($headerText): ?>
       <h1 class="page-title" style="margin-bottom:0;"><?php echo $headerText; ?></h1>
     <? else: ?>
@@ -42,14 +42,13 @@ data-overlay="0"
       <p class="lead" style="margin-bottom:0;"><?php echo $headerSubText; ?></h1>
     <?php endif; ?>
     </div>
-		<div class="col-md-6" style="padding: 12rem 0 8rem; display:flex; flex-direction:row; align-items:center">
+		<div class="col-md-6" >
 		<?php
 				$categories = get_categories( array(
 						'orderby' => 'name',
 						'order'   => 'ASC'
 				) );
-				echo '<div class="blog-categories">';
-				echo '<h6 style="margin-bottom:0;">'
+				echo '<div class="blog-categories  align-items-end">';
 				?><a style="text-decoration:none;  href="<? echo get_site_url(); ?>/news">All</a>
 				<?php
 				foreach( $categories as $category ) {
@@ -71,7 +70,7 @@ data-overlay="0"
 
 <section class="space--sm">
 
-	<div class="container" id="main" tabindex="-1">
+	<div class="container" id="main">
 
 	<?php
 	$args = array(
@@ -89,16 +88,22 @@ if ($featured->have_posts()):?>
 			 $backgroundImage = get_field('background_image');
 
 			?>
+			
 			<div class="col-md-8">
-			<img class="feature-column__image rounded" style="margin-bottom:0;" data-src="<?php echo $backgroundImage['url']; ?>" alt="<?php echo $alt; ?>"/>
-
+			<a href="<?php the_permalink(); ?>">
+				<img class="feature-column__image rounded" style="margin-bottom:0;" data-src="<?php echo $backgroundImage['url']; ?>" alt="<?php echo $alt; ?>"/>
+			</a>
 			</div>
-			<div class="col-md-4 blog-column--both">
+			<div class="col-md-4"> 
+				<div class=" blog-column--both">
+				<a href="<?php the_permalink(); ?>" class="feature-column">
 				<h6><?php $category = get_the_category(); echo $category[0]->name; ?></h6>
 				<p class="lead"><?php the_title(); ?></p>
 				<p><?php the_excerpt(); ?></p>
+			</a>
 			</div>
-		</div>
+			</div>
+		</div> 
 
 <?php endwhile; ?>
 <?php endif; ?>
@@ -115,8 +120,8 @@ if ($featured->have_posts()):?>
 					<?php while ( $the_query->have_posts() ) : $the_query->the_post(); 
 					    $backgroundImage = get_field('background_image');
 					?>
-          <a href="<?php the_permalink(); ?>" class="col-md-4 feature-column blog-column<?php if(empty($backgroundImage)): echo '--both'; endif;  ?>">
-          <article class="">
+          <a href="<?php the_permalink(); ?>" class="col-md-4 feature-column ">
+          <article class="blog-column<?php if(empty($backgroundImage)): echo '--both'; endif;  ?>">
                 <?php
  
                 if( !empty($backgroundImage) ):
@@ -129,12 +134,14 @@ if ($featured->have_posts()):?>
                   $height = $backgroundImage['sizes'][ $size . '-height' ];
                   ?>
                     <img class="feature-column__image rounded" data-src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
-                <?php endif; ?>
+								<?php endif; ?>
+								<div class="blog-column__text">
                     <h6><?php $category = get_the_category(); echo $category[0]->name; ?></h6>
                     <p class="lead"><?php the_title(); ?></p>
 										<?php if(empty($backgroundImage)): ?>
 											<p><?php the_excerpt(); ?></p>
 										<?php endif; ?>
+								</div>
             </article>
                 
               </a>

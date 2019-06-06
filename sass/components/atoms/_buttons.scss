@@ -1,7 +1,7 @@
 .btn {
   font-size: 0.875em;
   font-weight: 700;
-  padding: 0.75rem 1rem;
+  padding: 0.75rem 1.4rem;
   color: $color-primary;
   border-radius: 100px;
   text-decoration: none;
@@ -28,7 +28,7 @@
     @media screen and (min-width: 992px) {
       &:hover {
         background: darken($color-primary, 10%);
-        color: $color-white;
+        color: $color-white !important;
         box-shadow: 0 2px 6px 0 rgba($color-dark, 0.3);
         transform: translate(0, -2px) !important;
       }
@@ -125,4 +125,8 @@
     }
 
   }
+}
+
+.buttons {
+  margin-top: 0.75rem;
 }

@@ -34,6 +34,12 @@ function understrap_tiny_mce_before_init( $settings ) {
           'wrapper' => true
           ),
       array(
+            'title' => 'Intro Paragraph',
+            'selector' => 'p',
+            'classes' => 'intro',
+            'wrapper' => true
+            ),
+      array(
           'title' => 'Small',
           'inline' => 'small'
       ),

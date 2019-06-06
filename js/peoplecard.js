@@ -24,7 +24,7 @@ const showFullProfile = person => {
     });
   }
 };
-
+ 
 const setUpOpenListener = person =>
   new Promise(resolve => {
     person.addEventListener('click', () => {
@@ -82,7 +82,7 @@ const isOneActive = () => {
 const animateCardIn = person =>
   new Promise(resolve => {
     person.style.transition = 'none';
-    person.style.height = '7rem';
+    person.style.height = 'auto';
     person.style.opacity = '0';
 
     const image = person.querySelector('.people__image');
@@ -95,13 +95,16 @@ const animateCardIn = person =>
     var tl = anime.timeline({ autoplay: true });
     tl.add({
       targets: person,
-      height: '100%',
+      height: 'auto',
+      maxHeight: '7rem',
+      overflow: 'scroll',
       width: '100%',
       left: '50%',
       translateX: '-50%',
       top: '50%',
       translateY: '-50%',
       duration: 0,
+      padding: '2rem',
       easing: 'cubicBezier(.5, .05, .1, .3)',
     })
       .add({
@@ -120,7 +123,7 @@ const animateCardIn = person =>
         targets: person,
         width: '100%',
         opacity: 1,
-        height: '100%',
+        height: 'auto',
         duration: 400,
         easing: 'cubicBezier(.5, .05, .1, .3)',
       });

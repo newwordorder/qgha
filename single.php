@@ -9,7 +9,7 @@ get_header();
 	$bgImage = get_field('background_image');
 ?>
 <?php while ( have_posts() ) : the_post(); ?>
-<section id="sub-header" class="page-header page-header--page bg-effect--<?php echo $backgroundEffect ?> imagebg <?php if( $invertColours == 'yes' ): echo 'image--light'; endif; ?>" data-overlay="7" >
+<section id="sub-header" class="page-header page-header--page imagebg <?php if( $invertColours == 'yes' ): echo 'image--light'; endif; ?>" data-overlay="7" >
 
 <?php
 
@@ -37,7 +37,7 @@ get_header();
 
 </section>
 
-<section id="single-wrapper" class="space--md bg--light">
+<section id="single-wrapper" class="space--lg bg--light">
 
 	<div class="container" id="content" tabindex="-1">
 
@@ -48,77 +48,17 @@ get_header();
             </div>
           </div>
 
-          <?php  // check if the flexible content field has rows of data
-          if( have_rows('posts_blocks') ):
-
-            // loop through the rows of data
-            while ( have_rows('posts_blocks') ) : the_row();
-
-            if( get_row_layout() == 'text_block' ): ?>
-<!-- text -->
-            <div class="row justify-content-center my-5">
-              <div class="col-md-8">
-
-                <?php the_sub_field('text_block'); ?>
-
-              </div>
-            </div>
-
-          <?php  endif;
-
-          if( get_row_layout() == 'image_block' ): ?>
-<!-- image -->
-          <div class="row justify-content-center my-5"> 
-            <div class="col-md-10">
-            <?php
-							$image = get_sub_field('image');
-            if( !empty($image) ):
-
-            // vars
-            $url = $image['url'];
-            $alt = $image['alt'];
-
-            ?>
-              <img class="rounded" data-src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
-            <?php endif; ?>
-
-            </div>
-          </div>
-
-          <?php endif; 
-          if( get_row_layout() == 'video_block' ): ?>
-<!-- video -->
-          <div class="row justify-content-center my-5"> 
-            <div class="col-md-10">
-            <?php $video = get_sub_field('video_embed_code'); ?>
-            <div class="embed-container rounded">
-              <?php echo $video ?>
-              </div>
-            </div>
-          </div>
-          <?php endif; 
-          if( get_row_layout() == 'gallery_block' ): ?>
-          <!-- video -->
-            <div class="row justify-content-center my-5"> 
-            <div class="col-md-10">
-					  <?php 
-				endif;
-			endwhile;
-
-          endif;
-
-          ?>
       </main><!-- #main -->
 
 </div><!-- Container end -->
 
 </section><!-- Wrapper end -->
 
-<section class="related-posts  pb-5">
+<section class="related-posts  space--lg">
   <div class="container">
-    <div class="row pt-5 pb-2">
+    <div class="row">
       <div class="col text-center">
-        <h2>Related articles</h2>
+        <h4>Related articles</h4>
       </div>
     </div>
     <div class="row" style="position:relative;">
@@ -144,29 +84,32 @@ get_header();
         $wpex_query = new wp_query( $args );
 
         // Loop through posts
-		foreach( $wpex_query->posts as $post ) : setup_postdata( $post ); ?>
-			<a href="<?php the_permalink(); ?>" class="col-md-4 feature-column">
-				<article class="">
-						<?php
-						$backgroundImage = get_field('background_image');
-
-						if( !empty($backgroundImage) ):
-						// vars
-						$url = $backgroundImage['url'];
-						$alt = $backgroundImage['alt'];
-						$size = '600x400';
-						$thumb = $backgroundImage['sizes'][ $size ];
-						$width = $backgroundImage['sizes'][ $size . '-width' ];
-						$height = $backgroundImage['sizes'][ $size . '-height' ];
-
-						?>
-							<img class="feature-column__image" data-src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
-						<?php endif; ?>
-							<h6><?php $category = get_the_category(); echo $category[0]->name; ?></h6>
-							<p class="lead"><?php the_title(); ?></p>
-					</article>
-						
-					</a>
+		foreach( $wpex_query->posts as $post ) : setup_postdata( $post ); $backgroundImage = get_field('background_image');?>
+    <a href="<?php the_permalink(); ?>" class="col-md-4 feature-column ">
+          <article class="blog-column<?php if(empty($backgroundImage)): echo '--both'; endif;  ?>">
+                <?php 
+ 
+                if( !empty($backgroundImage) ):
+                  // vars
+                  $url = $backgroundImage['url'];
+                  $alt = $backgroundImage['alt'];
+                  $size = '600x400';
+                  $thumb = $backgroundImage['sizes'][ $size ];
+                  $width = $backgroundImage['sizes'][ $size . '-width' ];
+                  $height = $backgroundImage['sizes'][ $size . '-height' ];
+                  ?>
+                    <img class="feature-column__image rounded" data-src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
+								<?php endif; ?>
+								<div class="blog-column__text">
+                <h6><?php $category = get_the_category(); echo $category[0]->name; ?></h6>
+                    <p class="lead"><?php the_title(); ?></p>
+										<?php if(empty($backgroundImage)): ?>
+											<p><?php the_excerpt(); ?></p>
+										<?php endif; ?>
+								</div>
+            </article>
+                
+              </a>
 
         <?php
         // End loop

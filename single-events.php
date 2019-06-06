@@ -30,7 +30,7 @@ get_header();
 		<div class="col-md-12">
       <h6><?php echo get_field('date'); ?></h6>
 		  <h1 class="page-title" style="display:block;"><?php the_title(); ?></h1>
-      <a href="<?php echo get_field('rsvp_link'); ?>" class="btn btn--outline">RSVP</a>
+      <a href="<?php echo get_field('rsvp_link'); ?>" target="_blank" class="btn btn--outline">RSVP</a>
 		</div>
 
 	</div>
@@ -40,7 +40,7 @@ get_header();
 
 </section>
 
-<section id="single-wrapper" class="space--md bg--light">
+<section id="single-wrapper" class="space--lg bg--light">
 
 	<div class="container" id="content" tabindex="-1">
 
@@ -48,6 +48,7 @@ get_header();
           <div class="row">
             <div class="col-md-8">
               <?php the_content(); ?>
+              <a href="<?php echo get_field('rsvp_link'); ?>" target="_blank" class="btn btn--outline">RSVP</a>
             </div>
             <div class="col-md-4">
               <div class="event-details">
@@ -90,40 +91,40 @@ $wpex_query = new wp_query( $args );
 
 if($wpex_query->posts): ?>
 
-<section class="related-posts  pb-5">
+<section class="related-posts space--lg">
   <div class="container">
-    <div class="row pt-5 pb-2">
-      <div class="col text-center">
-        <h4>Upcoming events</h4>
-      </div>
-    </div>
-    <div class="row" style="position:relative;">
+    
+    <div class="row">
   <?php 
 
         // Loop through posts
-		foreach( $wpex_query->posts as $post ) : setup_postdata( $post ); ?>
-			<a href="<?php the_permalink(); ?>" class="col-md-4 feature-column">
-				<article class="">
-						<?php
-						$backgroundImage = get_field('background_image');
-
-						if( !empty($backgroundImage) ):
-						// vars
-						$url = $backgroundImage['url'];
-						$alt = $backgroundImage['alt'];
-						$size = '600x400';
-						$thumb = $backgroundImage['sizes'][ $size ];
-						$width = $backgroundImage['sizes'][ $size . '-width' ];
-						$height = $backgroundImage['sizes'][ $size . '-height' ];
-
-						?>
-							<img class="feature-column__image" data-src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
-						<?php endif; ?>
-							<h6><?php echo get_field('date'); ?></h6>
-							<p class="lead"><?php the_title(); ?></p>
-					</article>
-						
-					</a>
+    foreach( $wpex_query->posts as $post ) : setup_postdata( $post ); $backgroundImage = get_field('background_image');?>
+    <a href="<?php the_permalink(); ?>" class="col-md-4 feature-column ">
+          <article class="blog-column<?php if(empty($backgroundImage)): echo '--both'; endif;  ?>">
+                <?php 
+ 
+                if( !empty($backgroundImage) ):
+                  // vars
+                  $url = $backgroundImage['url'];
+                  $alt = $backgroundImage['alt'];
+                  $size = '600x400';
+                  $thumb = $backgroundImage['sizes'][ $size ];
+                  $width = $backgroundImage['sizes'][ $size . '-width' ];
+                  $height = $backgroundImage['sizes'][ $size . '-height' ];
+                  ?>
+                    <img class="feature-column__image rounded" data-src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
+								<?php endif; ?>
+								<div class="blog-column__text">
+                <h6><?php echo get_field('date'); ?></h6>
+                    <p class="lead"><?php the_title(); ?></p>
+										<?php if(empty($backgroundImage)): ?>
+											<p><?php the_excerpt(); ?></p>
+										<?php endif; ?>
+								</div>
+            </article>
+                
+              </a>
+		
 
         <?php
         // End loop

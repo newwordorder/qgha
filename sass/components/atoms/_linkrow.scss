@@ -3,7 +3,7 @@
   width: 100%;
   border-top: 1px solid rgba($color-white, 0.2);
 
-  padding-right: 1rem;
+  padding: 1rem 1rem 1rem 0;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
@@ -12,6 +12,10 @@
 
   &:last-of-type {
     border-bottom: 1px solid rgba($color-white, 0.2);
+  }
+
+  &__title {
+    margin: 0;
   }
 
   @media screen and (min-width: 768px) {

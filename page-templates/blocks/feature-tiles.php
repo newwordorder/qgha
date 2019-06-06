@@ -40,7 +40,7 @@ if( get_row_layout() == 'feature_tiles' ):
                   <?php endif; ?>
                 </div>
                 
-                  <div class="hover-element__reveal" data-scrim="8"></div>
+                  <div class="hover-element__reveal" data-scrim="0"></div>
                   <div class="feature-tile__content">
                     <div class="chevron-container">
                       <?php echo $text ?>

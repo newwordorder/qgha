@@ -8,7 +8,8 @@ import { wibbleboy } from './wibbleboy';
 import { slideboy } from './slideboy';
 import { accordian } from './accordian';
 import { lazyload } from './lazyload';
-import { peoplecard } from './peoplecard';
+// import { peoplecard } from './peoplecard';
+import MicroModal from 'micromodal';
 import 'unfetch/polyfill';
 
 imageboy();
@@ -19,7 +20,8 @@ menuboy();
 introboy();
 slideboy();
 accordian();
-peoplecard();
+// peoplecard();
+MicroModal.init();
 
 const svg = document.querySelector('svg.scene');
 if (svg) {

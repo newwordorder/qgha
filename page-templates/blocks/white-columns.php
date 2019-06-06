@@ -9,7 +9,7 @@ if( get_row_layout() == 'white_columns' ):
       <div class="row">
         <?php while( have_rows('white_columns_column') ): the_row(); $text = get_sub_field('text'); ?>
           <div class="col-md-<?php echo $columns; ?> feature-column">
-            <div style="background-color:#fff; width:100%; height:100%; padding: 0.5rem 2rem;">
+            <div style="background-color:#fff; width:100%; height:100%; padding: 1.5rem;">
               <?php echo $text ?>
             </div>
           </div>

@@ -17,7 +17,7 @@ $headerText = get_field('header_text');
 <?php while ( have_posts() ) : the_post(); ?>
 <section id="sub-header"
 
-class="page-header page-header--page bg--light bg-effect--<?php echo $backgroundEffect ?> imagebg"
+class="page-header page-header--page bg-effect--<?php echo $backgroundEffect ?> imagebg"
 data-overlay="<?php echo $imageOverlay; ?>"
 >
 
@@ -34,7 +34,7 @@ data-overlay="<?php echo $imageOverlay; ?>"
   <?php endif; ?>
 
 <div class="container">
-  <div class="row">
+  <div class="row justify-content-center">
     <div class="col-md-6 page-header__content">
     <?php if($headerText): ?>
       <h1 class="page-title"><?php echo $headerText; ?></h1>

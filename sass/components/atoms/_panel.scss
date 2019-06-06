@@ -12,7 +12,8 @@
     justify-content: flex-start;
     align-items: flex-start;
     @include font-bold;
-    padding-right: 2rem;
+    padding: 1rem 1rem 1rem 0;
+     margin: 0;
 
     a {
       text-transform: uppercase;

@@ -136,7 +136,7 @@ const slideboy = () => {
   const swiperSetup = query => {
     if (query.matches) {
       console.log('setting up');
-      const myElement = document.querySelector('#sub-header');
+      const myElement = document.querySelector('.page-header--home');
       var hammertime = new Hammer(myElement);
       hammertime.on('swipeleft', function(ev) {
         if (animating != true) {

@@ -85,6 +85,11 @@ lethargy@^1.0.2:
   resolved "https://registry.yarnpkg.com/lethargy/-/lethargy-1.0.7.tgz#f69854a57275959b7cf514d24ae373929f7a8cb2"
   integrity sha512-+IhiyZpw27A0KrtlfsrC1DcCgUYHqtWTqoa4CuJPyX7dmwF0b9bInWVkLrvn7yE88sEq86NxOSVtPhaVmE7C6A==
 
+micromodal@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/micromodal/-/micromodal-0.4.0.tgz#924b80adff6654310070432ac51bb1d195eefb95"
+  integrity sha512-YDku9Fi57S4Sm6oitSy3sr786qSp5L6NbatuH2kEeXf0jStvZgZk4bLBKaoSONBaq3BEvFz3hAaoUa7/pV1Kgg==
+
 ms@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.1.tgz#30a5864eb3ebb0a66f2ebe6d727af06a09d86e0a"

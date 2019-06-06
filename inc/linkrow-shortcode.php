@@ -13,7 +13,7 @@
             $title = do_shortcode($content);
             $out = "
                         <a class='linkrow' href='{$link}'>
-                            <p class='linkrow-title'>
+                            <p class='linkrow__title'>
                             {$title}
                             </p>
                             <i class='far fa-chevron-right'></i>

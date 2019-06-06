@@ -44,8 +44,8 @@ function misha_loadmore_ajax_handler(){
 		<?php /* Start the Loop */ ?>
 		<?php while ( have_posts() ) : the_post(); 
 			$backgroundImage = get_field('background_image'); ?>
-			<a href="<?php the_permalink(); ?>" class="col-md-4 feature-column blog-column<?php if(empty($backgroundImage)): echo '--both'; endif;  ?>">
-			 	<article class="">
+			<a href="<?php the_permalink(); ?>" class="col-md-4 feature-column">
+			 	<article class="blog-column<?php if(empty($backgroundImage)): echo '--both'; endif;  ?>">
 				   <?php
 
 				   if( !empty($backgroundImage) ):
@@ -59,11 +59,13 @@ function misha_loadmore_ajax_handler(){
 					 ?>
 					   <img class="feature-column__image rounded" src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
 				   <?php endif; ?>
-					   <h6><?php $category = get_the_category(); echo $category[0]->name; ?></h6>
-					   <p class="lead"><?php the_title(); ?></p>
-						<?php if(empty($backgroundImage)): ?>
-							<p><?php the_excerpt(); ?></p>
-						<?php endif; ?>
+				   <div class="blog-column__text">
+                    <h6><?php $category = get_the_category(); echo $category[0]->name; ?></h6>
+                    <p class="lead"><?php the_title(); ?></p>
+										<?php if(empty($backgroundImage)): ?>
+											<p><?php the_excerpt(); ?></p>
+										<?php endif; ?>
+								</div>
 			   </article>
 			 </a>
 		<?php endwhile; ?>

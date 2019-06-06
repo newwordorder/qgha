@@ -24,7 +24,7 @@ if( get_row_layout() == 'feature_columns' ):
 
         <div class="col-md-<?php echo $columns; ?> feature-column">
 
-          <div class="<?php if( $boxed == 'yes' ): ?>feature-column--boxed<?php endif; ?> <?php if( $centered == 'yes' ): ?>text-center<?php endif; ?>">
+          <div class=" <?php if( $boxed == 'yes' ): ?>feature-column--boxed<?php endif; ?> <?php if( $centered == 'yes' ): ?>text-center<?php endif; ?>">
 
             <?php if( $type == 'image' ):
               if( !empty($image) ):
@@ -39,7 +39,11 @@ if( get_row_layout() == 'feature_columns' ):
                 $height = $image['sizes'][ $size . '-height' ];
 
                 ?>
-                <img class="rounded feature-column__image zoomimg" data-src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
+                <div class="image image--landscape">
+                <div class="background-image-holder" >
+                      <img data-src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
+                    </div>
+              </div>
                 <?php if( $boxed == 'yes' ): ?><div class="feature-column--boxed__inner"><?php endif; ?>
               <?php endif; ?>
             <?php endif; ?>

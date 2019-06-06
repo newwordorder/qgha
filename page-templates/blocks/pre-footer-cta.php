@@ -4,7 +4,7 @@
   $backgroundImage = get_field('background_image','prefooter-cta');
 
 ?>
-<section id="pre-footer" class="footer-cta space--none">
+<section id="pre-footer" class="footer-cta">
   <div class="background-image-holder">
     <img data-src="<?php echo $backgroundImage['url']; ?>" />
   </div>

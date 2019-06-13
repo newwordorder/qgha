@@ -5,6 +5,7 @@
   color: $color-body;
   display: flex;
   flex-direction: column;
+  height: calc(100% - 1.5rem);
 
   &__image {
     border-radius: 3px;
@@ -64,9 +65,7 @@
     }
   }
 
-  strong {
-    text-transform: uppercase;
-  }
+  
 
   * {
     text-decoration: none;

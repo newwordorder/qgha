@@ -35,7 +35,7 @@ data-overlay="<?php echo $imageOverlay; ?>"
 
 <div class="container">
   <div class="row justify-content-center">
-    <div class="col-md-6 page-header__content">
+    <div class="col-md-6 page-header__content text-align-center">
     <?php if($headerText): ?>
       <h1 class="page-title"><?php echo $headerText; ?></h1>
     <? else: ?>

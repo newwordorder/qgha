@@ -15,27 +15,37 @@ $invertColours = $backgroundImage['invert_colours'];
 $headerText = get_field('header_text');
 ?>
 <?php while ( have_posts() ) : the_post(); ?>
+
+<?php if( !empty($image) ):
+
+// vars
+$url = $image['url'];
+$alt = $image['alt'];
+
+?>
+
 <section id="sub-header"
 
 class="page-header page-header--page bg-effect--<?php echo $backgroundEffect ?> imagebg"
 data-overlay="<?php echo $imageOverlay; ?>"
 >
 
-  <?php if( !empty($image) ):
-
-    // vars
-    $url = $image['url'];
-    $alt = $image['alt'];
-
-  ?>
+  
     <div class="background-image-holder">
       <img data-src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
     </div>
+<?php else: ?>
+
+<section id="sub-header"
+
+class="page-header page-header--page bg--light"
+>
+
   <?php endif; ?>
 
 <div class="container">
-  <div class="row  justify-content-center">
-    <div class="col-md-8 page-header__content">
+  <div class="row justify-content-center">
+    <div class="col-md-8 page-header__content text-align-center">
     <?php if($headerText): ?>
       <?php echo $headerText; ?>
     <? else: ?>

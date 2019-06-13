@@ -134,8 +134,8 @@ if ($featured->have_posts()):?>
           ?>
         <?php if ( $the_query->have_posts() ) : ?>
           <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-          <a href="<?php the_permalink(); ?>" class="col-md-4 feature-column">
-          <article class="">
+          <a href="<?php the_permalink(); ?>" class="col-md-4 ">
+          <article class="feature-column">
                 <?php
                 $backgroundImage = get_field('background_image');
 

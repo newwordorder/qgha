@@ -22,9 +22,9 @@ if( get_row_layout() == 'feature_columns' ):
 
         ?>
 
-        <div class="col-md-<?php echo $columns; ?> feature-column">
+        <div class="col-md-<?php echo $columns; ?> ">
 
-          <div class=" <?php if( $boxed == 'yes' ): ?>feature-column--boxed<?php endif; ?> <?php if( $centered == 'yes' ): ?>text-center<?php endif; ?>">
+          <div class="feature-column <?php if( $boxed == 'yes' ): ?>feature-column--boxed<?php endif; ?> <?php if( $centered == 'yes' ): ?>text-align-center<?php endif; ?>">
 
             <?php if( $type == 'image' ):
               if( !empty($image) ):

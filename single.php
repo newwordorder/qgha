@@ -6,34 +6,49 @@
  */
 
 get_header();
-	$bgImage = get_field('background_image');
+	
 ?>
 <?php while ( have_posts() ) : the_post(); ?>
-<section id="sub-header" class="page-header page-header--page imagebg <?php if( $invertColours == 'yes' ): echo 'image--light'; endif; ?>" data-overlay="7" >
 
-<?php
+<?php $bgImage = get_field('background_image'); 
+$imageOverlay = get_field('image_overlay'); 
+$backgroundEffect = get_field('background_effect');
 
-	if( !empty($bgImage) ):
+ if( !empty($bgImage) ):
 
-	// vars
-	$url = $bgImage['url'];
-	$alt = $bgImage['alt'];
+// vars
+$url = $bgImage['url'];
+$alt = $bgImage['alt'];
 
-  ?>
-  <div class="background-image-holder">
-    <img data-src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
+?>
+
+<section id="sub-header"
+
+class="page-header page-header--page bg-effect--<?php echo $backgroundEffect ?> imagebg"
+data-overlay="<?php echo $imageOverlay; ?>"
+>
+
+  
+    <div class="background-image-holder">
+      <img data-src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
+    </div>
+<?php else: ?>
+
+<section id="sub-header"
+
+class="page-header page-header--page bg--light"
+>
+
+  <?php endif; ?>
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-8 page-header__content text-align-center">
+
+      <h1 class="page-title"><?php the_title(); ?></h1>
+    </div>
   </div>
-<?php endif; ?>
-
-	<div class="container">
-	<div class="row justify-content-center">
-		<div class="col-md-8 text-center page-header__content">
-		<h1><?php the_title(); ?></h1>
-		</div>
-	</div>
-	</div>
-
-<?php get_template_part( 'page-templates/blocks/overlap' ); ?>
+</div>
 
 </section>
 
@@ -85,8 +100,8 @@ get_header();
 
         // Loop through posts
 		foreach( $wpex_query->posts as $post ) : setup_postdata( $post ); $backgroundImage = get_field('background_image');?>
-    <a href="<?php the_permalink(); ?>" class="col-md-4 feature-column ">
-          <article class="blog-column<?php if(empty($backgroundImage)): echo '--both'; endif;  ?>">
+    <a href="<?php the_permalink(); ?>" class="col-md-4 ">
+          <article class="feature-column blog-column<?php if(empty($backgroundImage)): echo '--both'; endif;  ?>">
                 <?php 
  
                 if( !empty($backgroundImage) ):

@@ -1,6 +1,6 @@
 <?php
 /**
-* Template Name: regular
+* Template Name: Contact
  *
  * @package understrap
  */

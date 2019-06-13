@@ -2114,28 +2114,20 @@
 		"oAP": "/page-templates/events.php",
 		"oF": 0
 		},
+	"/page-templates/home.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-templates/home.php",
+		"oF": 0
+		},
 	"/page-templates/news.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/page-templates/news.php",
-		"oF": 0
-		},
-	"/page-templates/page.1.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/page-templates/page.1.php",
-		"oF": 0
-		},
-	"/page-templates/page.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/page-templates/page.php",
 		"oF": 0
 		},
 	"/page-templates/regular.php": {
@@ -3191,14 +3183,6 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/search.php",
-		"oF": 0
-		},
-	"/sidebar.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/sidebar.php",
 		"oF": 0
 		},
 	"/single-events.php": {

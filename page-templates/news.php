@@ -95,7 +95,7 @@ if ($featured->have_posts()):?>
 			</a>
 			</div>
 			<div class="col-md-4"> 
-				<div class=" blog-column--both">
+				<div class=" blog-column--both" style="height: 100%;">
 				<a href="<?php the_permalink(); ?>" class="feature-column">
 				<h6><?php $category = get_the_category(); echo $category[0]->name; ?></h6>
 				<p class="lead"><?php the_title(); ?></p>
@@ -120,8 +120,9 @@ if ($featured->have_posts()):?>
 					<?php while ( $the_query->have_posts() ) : $the_query->the_post(); 
 					    $backgroundImage = get_field('background_image');
 					?>
-          <a href="<?php the_permalink(); ?>" class="col-md-4 feature-column ">
-          <article class="blog-column<?php if(empty($backgroundImage)): echo '--both'; endif;  ?>">
+          <div class="col-md-4">
+		  <a href="<?php the_permalink(); ?>" class="">
+          <article class=" feature-column blog-column<?php if(empty($backgroundImage)): echo '--both'; endif;  ?>">
                 <?php
  
                 if( !empty($backgroundImage) ):
@@ -145,6 +146,7 @@ if ($featured->have_posts()):?>
             </article>
                 
               </a>
+			  </div>
 
         <?php endwhile;
 

@@ -39,12 +39,12 @@
 			</div>
 			<div class="row justify-content-center">
 				<div class="col-12 text-align-center">
-					<p>2018 University of Queensland</p>
+					<p>&copy; <?php echo date("Y"); ?> Queensland Genomics</p>
 				</div>
 			</div>
 			<div class="row justify-content-center">
 				<div class="col-12 text-align-center">
-					<p>Terms of Use | Privacy Policy</p>
+					<a href="<?php echo get_home_url(); ?>/privacy-terms-of-use">Privacy & Terms of use</a> | <a href="http://newwordorder.com.au">Site by NWO</a>
 				</div>
 			</div>
 	</footer>

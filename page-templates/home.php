@@ -1,6 +1,6 @@
 <?php
 /**
-* Template Name: Page
+* Template Name: Home
 *
 *
 * @package understrap

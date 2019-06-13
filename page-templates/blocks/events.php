@@ -22,7 +22,7 @@ if( get_row_layout() == 'events' ):
         <?php if ( $the_query->have_posts() ) : ?>
           <?php while ( $the_query->have_posts() ) : $the_query->the_post();  $backgroundImage = get_field('background_image');?>
           <a href="<?php the_permalink(); ?>" class="col-md-4 feature-column ">
-          <article class="blog-column<?php if(empty($backgroundImage)): echo '--both'; endif;  ?>">
+          <article class=" feature-column blog-column<?php if(empty($backgroundImage)): echo '--both'; endif;  ?>">
                 <?php 
  
                 if( !empty($backgroundImage) ):

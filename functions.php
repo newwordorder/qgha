@@ -35,9 +35,6 @@ if ( ! function_exists( 'new_theme_setup' ) ) :
 		 */
 		add_theme_support( 'title-tag' );
 
-		//lqip
-		add_theme_support( 'lqip' );
-
 
 		/*
 		 * Enable support for Post Thumbnails on posts and pages.
@@ -168,9 +165,6 @@ require get_template_directory() . '/inc/acf-options.php';
 /** Our Menus */
 
 require get_template_directory() . '/inc/register-menus.php';
-
-/**lqip */
-require get_template_directory() . '/inc/lqip.php';
 
 require get_template_directory() . '/inc/accordian-shortcode.php';
 require get_template_directory() . '/inc/linkrow-shortcode.php';

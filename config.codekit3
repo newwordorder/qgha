@@ -1580,14 +1580,6 @@
 		"oAP": "/inc/loadmore.php",
 		"oF": 0
 		},
-	"/inc/lqip.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/inc/lqip.php",
-		"oF": 0
-		},
 	"/inc/register-menus.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -2116,7 +2108,7 @@
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/page-templates/News.php",
+		"oAP": "/page-templates/news.php",
 		"oF": 0
 		},
 	"/page-templates/regular.php": {

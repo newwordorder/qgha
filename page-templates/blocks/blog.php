@@ -34,7 +34,11 @@ if( get_row_layout() == 'blog_posts' ):
                   $width = $backgroundImage['sizes'][ $size . '-width' ];
                   $height = $backgroundImage['sizes'][ $size . '-height' ];
                   ?>
-                    <img class="feature-column__image rounded" data-src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
+                    <div class="feature-column__image image--landscape" style="position: relative;">
+                      <div class="background-image-holder rounded">
+                        <img data-src="<?php echo $url; ?>" alt="<?php echo $alt; ?>">
+                      </div>
+                    </div>
 								<?php endif; ?>
 								<div class="blog-column__text">
                     <h6><?php $category = get_the_category(); echo $category[0]->name; ?></h6>
@@ -73,7 +77,7 @@ if( get_row_layout() == 'blog_posts' ):
           <article class="col-sm-6 col-md-4 text-center blog-tile">
 
             <a href="<?php the_permalink(); ?>" class="">
-              <div class="blog-tile__thumb " data-scrim="0">
+              <div class="blog-tile__thumb image--landscape" data-scrim="0">
                 <?php
                 $backgroundImage = get_field('background_image');
 

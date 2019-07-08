@@ -48,6 +48,9 @@ if( get_row_layout() == 'people' ):
                   <h4><?php the_title(); ?></h4>
                   <p class="people__title"><?php the_field('title'); ?></p>
                   <p class="people__bio"><?php the_field('bio'); ?></p>
+                  <br />
+                  <?php $link = get_field('linkedin'); if($link): ?><a href="<?php echo $link; ?>"><i class="fab fa-linkedin-in"></i></a><?php endif; ?>
+
                 </div>
                 </div>
         </main>

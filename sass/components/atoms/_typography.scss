@@ -214,3 +214,27 @@ h1 {
     font-size: 3.5rem;
   }
 }
+
+blockquote {
+  font-size: 1.5em;
+
+  p {
+    margin-bottom: 0.5rem;
+  }
+
+  footer {
+    font-size: 1rem;
+    font-weight: bold;
+    padding-top: 0.25rem;
+    margin-top: 0.5rem;
+
+    &:before {
+      content: '';
+      position: absolute;
+      transform: translateX(0px) translateY(-8px);
+      width: 4rem;
+      height: 0.25rem;
+      background-color: $color-heading;
+    }
+  }
+}

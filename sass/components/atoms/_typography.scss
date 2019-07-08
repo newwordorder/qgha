@@ -6,28 +6,6 @@
   margin-bottom: 0;
 }
 
-
-.page-title {
-  font-size: 4.5rem;
-  line-height: 1em;
-  position: relative;
-  z-index: 1;
-  @include font-light;
-  color: $color-heading;
-
-  @media screen and (max-width:425px) {
-    font-size: 2rem;
-  }
-
-  @media screen and (min-width: 425px) and (max-width:992px) {
-    font-size: 2.5rem;
-  }
-
-  @media screen and (min-width: 992px) and (max-width: 1200px) {
-    font-size: 3.5rem;
-  }
-}
-
 .line {
   display: block;
 }
@@ -75,7 +53,7 @@ h1,
 h2,
 h3,
 h4,
-h5, 
+h5,
 h6 {
   margin: 0 0 1.5rem;
   line-height: 1.15;
@@ -212,4 +190,27 @@ textarea {
   border-radius: 100px !important;
   width: auto;
   background-color: $color-dark !important;
+}
+
+
+.page-title,
+h1 {
+  font-size: 4.5rem;
+  line-height: 1em;
+  position: relative;
+  z-index: 1;
+  @include font-light;
+  color: $color-heading;
+
+  @media screen and (max-width:425px) {
+    font-size: 2rem;
+  }
+
+  @media screen and (min-width: 425px) and (max-width:992px) {
+    font-size: 2.5rem;
+  }
+
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
+    font-size: 3.5rem;
+  }
 }

@@ -1868,17 +1868,6 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/node_modules/micromodal/dist/micromodal.es.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/micromodal/dist/micromodal.es-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"/node_modules/unfetch/polyfill/polyfill.mjs": {
 		"cB": 0,
 		"ft": 8192,
@@ -2122,12 +2111,12 @@
 		"oAP": "/page-templates/home.php",
 		"oF": 0
 		},
-	"/page-templates/news.php": {
+	"/page-templates/News.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/page-templates/news.php",
+		"oAP": "/page-templates/News.php",
 		"oF": 0
 		},
 	"/page-templates/regular.php": {

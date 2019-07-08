@@ -3,7 +3,7 @@
 if( get_row_layout() == 'inline_menu' ):
     $inline_menu = get_sub_field('inline_menu_menu')
   ?>
-    <div class="inline-menu-container">
+    <div class="container">
         <div class="row">
             <ul class="inline-menu">
                 <?php while( have_rows('inline_menu_menu') ): the_row(); ?>

@@ -5,6 +5,7 @@
   }
 
   &--white {
+
     h1,
     h2,
     h3,
@@ -12,10 +13,12 @@
     h5,
     h6 {
       @include font-bold;
-      color: $color-heading!important;
+      color: $color-heading !important;
     }
 
-    p {color: $color-body!important;}
+    p {
+      color: $color-body !important;
+    }
   }
 
   &--light {
@@ -61,4 +64,50 @@
 
   }
 
+}
+
+/**! 23. Parallax **/
+
+.bg-effect--parallax {
+  overflow: hidden;
+}
+
+.bg-effect--parallax .background-image-holder {
+  transition: none !important;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+}
+
+.bg-effect--parallax>.background-image-holder,
+.bg-effect--parallax .slides li>.background-image-holder {
+  height: 100%;
+  min-height: 100vh;
+  top: -50vh;
+  transition: opacity 0.3s ease !important;
+  -webkit-transition: opacity 0.3s ease !important;
+  -webkit-transform-style: preserve-3d;
+}
+
+.bg-effect--parallax:first-child .slides li>.background-image-holder,
+.bg-effect--parallax:first-child .background-image-holder {
+  top: 0;
+}
+
+.main-container>a:first-child+.bg-effect--parallax .background-image-holder {
+  top: 0;
+}
+
+@media all and (max-width: 1024px) {
+
+  .bg-effect--parallax>.background-image-holder,
+  .bg-effect--parallax .slides li>.background-image-holder {
+    -webkit-transition: transform 0.016s linear !important;
+    transition: transform 0.016s linear !important;
+  }
+
+  .bg-effect--parallax.bg-effect--parallax-disable-mobile .background-image-holder,
+  .bg-effect--parallax.bg-effect--parallax-disable-mobile .slides li>.background-image-holder {
+    top: 0 !important;
+    transform: none !important;
+  }
 }

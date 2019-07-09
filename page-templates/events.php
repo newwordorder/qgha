@@ -51,8 +51,9 @@ data-overlay="0"
 						) );
 				echo '<div class="blog-categories">';
 				echo '<h6 style="margin-bottom:0;">'
-				?><a style="text-decoration:none;  href="<? echo get_site_url(); ?>/news">All</a>
+				?><!--<a style="text-decoration:none;  href="<? echo get_site_url(); ?>/news">All</a> -->
 				<?php
+				/*
 				foreach( $categories as $category ) {
 						$category_link = sprintf(
 								'<a style="text-decoration:none;" class="blog-categories__link" href="%1$s" alt="%2$s">%3$s</a>',
@@ -63,6 +64,7 @@ data-overlay="0"
 						echo sprintf( esc_html__( '%s', 'textdomain' ), $category_link );
 
 				}
+				*/
 				echo '</div>';
 				?></div>
   </div>

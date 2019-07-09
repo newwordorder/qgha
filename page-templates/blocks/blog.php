@@ -9,13 +9,22 @@ if( get_row_layout() == 'blog_posts' ):
 
 <?php if( $includePosts == 'latest' ): ?>
   <div class="container">
-    
+
     <div class="row">
       <?php
+          $postCategory = get_sub_field('category');
+          if($postCategory){
+            $the_query = new WP_Query( array(
+              'posts_per_page' => 3,
+              'category_name' => $postCategory
+          ));
+
+          }else{
             // the query
             $the_query = new WP_Query( array(
                 'posts_per_page' => 3,
             ));
+          }
           ?>
         <?php if ( $the_query->have_posts() ) : ?>
         <?php while ( $the_query->have_posts() ) : $the_query->the_post(); 
@@ -41,7 +50,7 @@ if( get_row_layout() == 'blog_posts' ):
                     </div>
 								<?php endif; ?>
 								<div class="blog-column__text">
-                    <h6><?php $category = get_the_category(); echo $category[0]->name; ?></h6>
+                    <h6><?php $category = get_the_category();  if($category[0]->name != 'Uncategorized'): echo $category[0]->name; endif;?></h6>
                     <p class="lead"><?php the_title(); ?></p>
 										<?php if(empty($backgroundImage)): ?>
 											<p><?php the_excerpt(); ?></p>
@@ -96,7 +105,7 @@ if( get_row_layout() == 'blog_posts' ):
                   </div>
                 <?php endif; ?>
                 <div class="text">
-                  <h6><?php $category = get_the_category(); echo $category[0]->name; ?></h6>
+                <h6><?php $category = get_the_category(); if($category[0]->name != 'Uncategorized'): echo $category[0]->name; endif;?></h6>
                   <p class="lead"><?php the_title(); ?></p>
                 </div>
               </div>
@@ -147,7 +156,7 @@ if( get_row_layout() == 'blog_posts' ):
                 </article>
                 <div class="col-md-6">
                   <div class="text">
-                    <h6><?php $category = get_the_category(); echo $category[0]->name; ?></h6>
+                  <h6><?php $category = get_the_category(); if($category[0]->name != 'Uncategorized'): echo $category[0]->name; endif;?></h6>
                     <p class="lead"><?php the_title(); ?></p>
                   </div>
                 </div>

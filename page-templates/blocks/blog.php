@@ -50,7 +50,7 @@ if( get_row_layout() == 'blog_posts' ):
                     </div>
 								<?php endif; ?>
 								<div class="blog-column__text">
-                    <h6><?php $category = get_the_category();  if($category[0]->name != 'Uncategorized'): echo $category[0]->name; endif;?></h6>
+                    <h6><?php $category = get_the_category($item->ID);  if($category[0]->name != 'Uncategorized'): echo $category[0]->name; endif;?></h6>
                     <p class="lead"><?php the_title(); ?></p>
 										<?php if(empty($backgroundImage)): ?>
 											<p><?php the_excerpt(); ?></p>
@@ -133,7 +133,7 @@ if( get_row_layout() == 'blog_posts' ):
         
                   <div class="col-md-6">
                     <div class="text">
-                      <h6><?php $category = get_the_category(); if($category[0]->name != 'Uncategorized'): echo $category[0]->name; endif;?></h6>
+                      <h6><?php $category = get_the_category($item2->ID); if($category[0]->name != 'Uncategorized'): echo $category[0]->name; endif;?></h6>
                       <p class="lead"><?php echo $item2->post_title; ?></p>
                     </div>
                   </div>
@@ -163,7 +163,7 @@ if( get_row_layout() == 'blog_posts' ):
                   </article>
                   <div class="col-md-6">
                     <div class="text">
-                      <h6><?php $category = get_the_category(); if($category[0]->name != 'Uncategorized'): echo $category[0]->name; endif;?></h6>
+                      <h6><?php $category = get_the_category($item3->ID); if($category[0]->name != 'Uncategorized'): echo $category[0]->name; endif;?></h6>
                       <p class="lead"><?php echo $item3->post_title; ?></p>
                     </div>
                   </div>

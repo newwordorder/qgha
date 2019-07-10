@@ -30,7 +30,7 @@ if( get_row_layout() == 'blog_posts' ):
         <?php while ( $the_query->have_posts() ) : $the_query->the_post(); 
 					    $backgroundImage = get_field('background_image');
 					?>
-          <a href="<?php the_permalink(); ?>" class="col-md-4 ">
+          <a href="<?php echo get_post_permalink($item->ID); ?>" class="col-md-4 ">
           <article class="feature-column blog-column<?php if(empty($backgroundImage)): echo '--both'; endif;  ?>">
                 <?php
  
@@ -107,7 +107,7 @@ if( get_row_layout() == 'blog_posts' ):
                  $item2 = $the_query->posts[1];
                  $item3 = $the_query->posts[2];
           ?>
-            <a href="<?php echo $item2->guid; ?>" class="col-md-12 blog-tile--small">
+            <a href="<?php echo get_post_permalink($item2->ID); ?>" class="col-md-12 blog-tile--small">
               <div class="row">
                 <article class="col-md-6 img">
                   <div class="blog-tile__thumb ">
@@ -138,7 +138,7 @@ if( get_row_layout() == 'blog_posts' ):
                     </div>
                   </div>
               </a>
-            <a href="<?php echo $item3->guid; ?>" class="col-md-12 blog-tile--small">
+            <a href="<?php echo get_post_permalink($item3->ID); ?>" class="col-md-12 blog-tile--small">
 
                   <article class="col-md-6 img">
                     <div class="blog-tile__thumb ">

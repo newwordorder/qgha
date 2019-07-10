@@ -30,7 +30,7 @@ get_header();
 		<div class="col-md-12">
       <h6><?php echo get_field('date'); ?></h6>
 		  <h1 class="page-title" style="display:block;"><?php the_title(); ?></h1>
-      <a href="<?php echo get_field('rsvp_link'); ?>" target="_blank" class="btn btn--outline">RSVP</a>
+      <?php $rsvp = get_field('rsvp'); if($rsvp): ?><a href="<?php echo get_field('rsvp_link'); ?>" target="_blank" class="btn btn--outline">RSVP</a><?php endif; ?>
 		</div>
 
 	</div>
@@ -48,7 +48,7 @@ get_header();
           <div class="row">
             <div class="col-md-8">
               <?php the_content(); ?>
-              <a href="<?php echo get_field('rsvp_link'); ?>" target="_blank" class="btn btn--outline">RSVP</a>
+              <?php $rsvp = get_field('rsvp'); if($rsvp): ?><a href="<?php echo get_field('rsvp_link'); ?>" target="_blank" class="btn btn--outline">RSVP</a><?php endif; ?>
             </div>
             <div class="col-md-4">
               <div class="event-details">

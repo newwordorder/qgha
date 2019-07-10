@@ -27,7 +27,7 @@ $bottomBgColour = get_sub_field('bottom_bg_colour');
             </div>
             <div class="container  space--<?php echo $space ?>">
                 <div class="row <?php if( $flipLayout == 'yes' ): echo 'justify-content-end'; endif; ?>">
-                    <?php if( $flipLayout == 'yes' ):?><div class="<?php if( $layout == '1/3' ): echo 'col-md-4'; endif; ?> <?php if( $layout == '1/2' ): echo 'col-md-6'; endif; ?> <?php if( $layout == '2/3' ): echo 'col-md-8'; endif; ?>"></div><?php endif; ?>
+                    <?php if( $flipLayout == 'yes' ):?><div class="<?php if( $layout == '1/3' ): echo 'col-md-5'; endif; ?> <?php if( $layout == '1/2' ): echo 'col-md-7'; endif; ?> <?php if( $layout == '2/3' ): echo 'col-md-9'; endif; ?>"></div><?php endif; ?>
                     <div class="<?php if( $layout == '1/3' ): echo 'col-md-7'; endif; ?><?php if( $layout == '1/2' ): echo 'col-md-5'; endif; ?><?php if( $layout == '2/3' ): echo 'col-md-3'; endif; ?>">
                         <?php echo $text ?>
                         <?php get_template_part( 'page-templates/blocks/block-partials/buttons' ); ?>

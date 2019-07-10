@@ -217,6 +217,15 @@ h1 {
 
 blockquote {
   font-size: 1.5em;
+  position: relative;
+
+  &:before {
+    content: '';
+    border-left: 4px solid $color-heading;
+    height: 100%;
+    position: absolute;
+    left: -1rem;
+  }
 
   p {
     margin-bottom: 0.5rem;
@@ -227,14 +236,4 @@ blockquote {
     font-weight: bold;
     padding-top: 0.25rem;
     margin-top: 0.5rem;
-
-    &:before {
-      content: '';
-      position: absolute;
-      transform: translateX(0px) translateY(-8px);
-      width: 4rem;
-      height: 0.25rem;
-      background-color: $color-heading;
-    }
   }
-}

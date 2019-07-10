@@ -50,7 +50,7 @@ if( get_row_layout() == 'blog_posts' ):
                     </div>
 								<?php endif; ?>
 								<div class="blog-column__text">
-                    <h6><?php $category = get_the_category($item->ID);  if($category[0]->name != 'Uncategorized'): echo $category[0]->name; endif;?></h6>
+                    <h6><?php $category = get_the_category($item->ID);  if($category[0]->name !== 'Uncategorized'): echo $category[0]->name; endif;?></h6>
                     <p class="lead"><?php the_title(); ?></p>
 										<?php if(empty($backgroundImage)): ?>
 											<p><?php the_excerpt(); ?></p>

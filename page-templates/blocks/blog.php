@@ -132,7 +132,7 @@ if( get_row_layout() == 'blog_posts' ):
                     </article>
         
                   <div class="col-md-6">
-                    <div class="text">
+                    <div class="text"  style="padding-top:0.5rem;">
                       <h6><?php $category = get_the_category($item2->ID); if($category[0]->name != 'Uncategorized'): echo $category[0]->name; endif;?></h6>
                       <p class="lead"><?php echo $item2->post_title; ?></p>
                     </div>
@@ -161,8 +161,8 @@ if( get_row_layout() == 'blog_posts' ):
                       <?php endif; ?>
                     </div>
                   </article>
-                  <div class="col-md-6">
-                    <div class="text">
+                  <div class="col-md-6" >
+                    <div class="text"  style="padding-top:0.5rem;">
                       <h6><?php $category = get_the_category($item3->ID); if($category[0]->name != 'Uncategorized'): echo $category[0]->name; endif;?></h6>
                       <p class="lead"><?php echo $item3->post_title; ?></p>
                     </div>

@@ -10,13 +10,8 @@
   </div>
   <div class="container footer-cta__content">
     <div class="row align-items-center ">
-      <div class="col-md-4 col-lg-4">
+      <div class="col-md-8 col-lg-8">
           <?php echo $prefooterText; ?>
-      </div>
-      <div class="col-md-7 offset-md-1">
-      <div class="pre-footer-image">
-        <img data-src="<?php echo $image['url']; ?>" />
-      </div>
       </div>
     </div>
   </div>

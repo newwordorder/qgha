@@ -13,10 +13,12 @@
 <head>
 	<?php get_template_part( 'meta' ); ?>
 	<?php wp_head(); ?>
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/dist/styles.css">
+
 	<link rel="stylesheet" href="https://use.typekit.net/noo8jys.css">
 
 	<?php get_template_part( 'analytics' ); ?>
-	<script defer src="<?php echo get_template_directory_uri(); ?>/js/fa.js"></script> <!--load all styles -->
+	<!--<script defer src="<?php echo get_template_directory_uri(); ?>/js/fa.js"></script> <!--load all styles --> 
 
 </head>
 <body <?php body_class(); ?>>

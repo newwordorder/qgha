@@ -1,26 +1,37 @@
-import { colorboy } from '@nmacarthur/colorboy';
 import { imageboy } from '@nmacarthur/imageboy';
 import { zoomboy } from '@nmacarthur/zoomboy';
 import { menuboy } from './menuboy';
-import { colors } from './themeboy';
 import { introboy } from './introboy';
 import { wibbleboy } from './wibbleboy';
 import { slideboy } from './slideboy';
 import { accordian } from './accordian';
 import { lazyload } from './lazyload';
-// import { peoplecard } from './peoplecard';
 import MicroModal from 'micromodal';
+
 import 'unfetch/polyfill';
 
+import parallax from './parallax';
+import loadmore from './loadmore';
+
+import fontawesome from '@fortawesome/fontawesome';
+
+import fasArrowRight from '@fortawesome/free-solid-svg-icons/faArrowRight';
+import fasArrowLeft from '@fortawesome/free-solid-svg-icons/faArrowLeft';
+
+import '../src/style.css';
+
+parallax();
 imageboy();
 lazyload();
 zoomboy();
-colorboy(colors);
 menuboy();
 introboy();
 slideboy();
 accordian();
-// peoplecard();
+loadmore();
+
+fontawesome.library.add(fasArrowLeft, fasArrowRight);
+
 MicroModal.init();
 
 const svg = document.querySelector('svg.scene');

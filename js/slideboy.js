@@ -1,4 +1,5 @@
 import anime from 'animejs';
+require('hammerjs');
 
 const slideboy = () => {
   let animating = false;

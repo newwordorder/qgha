@@ -1,5 +1,3 @@
-import anime from 'animejs';
-
 const menuboy = () => {
   const menu = document.querySelector('.toggle-menu');
   const header = document.querySelector('#header__primary');

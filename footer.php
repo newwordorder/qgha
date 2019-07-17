@@ -53,9 +53,8 @@
 <?php wp_footer(); ?>
 <script>
 amplitude.getInstance().logEvent('Loaded');</script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/hammer.min.js" ></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/parallax-min.js" ></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/main-min.js" ></script>
+
+<script src="<?php echo get_template_directory_uri(); ?>/dist/main.bundle.js" ></script>
 
 </body>
 </html>

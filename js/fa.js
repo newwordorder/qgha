@@ -1,5 +1,3 @@
-const fa = () => {
-
 /*!
  * Font Awesome Pro 5.8.2 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license (Commercial License)
@@ -8003,6 +8001,3 @@ const fa = () => {
   bunker(bootstrap);
 
 }());
-
-}
-export default fa;

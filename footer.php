@@ -55,6 +55,7 @@
 amplitude.getInstance().logEvent('Loaded');</script>
 
 <script src="<?php echo get_template_directory_uri(); ?>/dist/main.bundle.js" ></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/fa.js" ></script>
 
 </body>
 </html>

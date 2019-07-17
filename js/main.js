@@ -13,11 +13,6 @@ import 'unfetch/polyfill';
 import parallax from './parallax';
 import loadmore from './loadmore';
 
-import fontawesome from '@fortawesome/fontawesome';
-
-import fasArrowRight from '@fortawesome/free-solid-svg-icons/faArrowRight';
-import fasArrowLeft from '@fortawesome/free-solid-svg-icons/faArrowLeft';
-
 import '../src/style.css';
 
 parallax();
@@ -29,9 +24,6 @@ introboy();
 slideboy();
 accordian();
 loadmore();
-
-fontawesome.library.add(fasArrowLeft, fasArrowRight);
-
 MicroModal.init();
 
 const svg = document.querySelector('svg.scene');

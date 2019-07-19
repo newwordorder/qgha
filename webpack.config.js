@@ -25,8 +25,6 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             presets: ['@babel/preset-env'],
-            cacheDirectory: true,
-            plugins: ['@babel/plugin-transform-runtime'],
           },
         },
       },
@@ -59,37 +57,8 @@ module.exports = {
       disable: process.env.NODE_ENV === 'development',
     }),
     new CleanWebpackPlugin(),
-    new UglifyJsPlugin({
-      sourceMap: true,
-      uglifyOptions: {
-        dead_code: true,
-      },
-    }),
+
     new CompressionPlugin(),
-    new BundleAnalyzerPlugin(),
+    //new BundleAnalyzerPlugin(),
   ],
-  optimization: {
-    splitChunks: {
-      chunks: 'async',
-      minSize: 30000,
-      maxSize: 0,
-      minChunks: 1,
-      maxAsyncRequests: 5,
-      maxInitialRequests: 3,
-      automaticNameDelimiter: '~',
-      automaticNameMaxLength: 30,
-      name: true,
-      cacheGroups: {
-        vendors: {
-          test: /[\\/]node_modules[\\/]/,
-          priority: -10,
-        },
-        default: {
-          minChunks: 2,
-          priority: -20,
-          reuseExistingChunk: true,
-        },
-      },
-    },
-  },
 };

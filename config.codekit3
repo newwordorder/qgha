@@ -1088,307 +1088,6 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"/dist/fonts/fa-brands-400.eot": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dist/fonts/fa-brands-400.eot",
-		"oF": 0
-		},
-	"/dist/fonts/fa-brands-400.eot.gz": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dist/fonts/fa-brands-400.eot.gz",
-		"oF": 0
-		},
-	"/dist/fonts/fa-brands-400.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/dist/fonts/fa-brands-400.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/dist/fonts/fa-brands-400.svg.gz": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dist/fonts/fa-brands-400.svg.gz",
-		"oF": 0
-		},
-	"/dist/fonts/fa-brands-400.ttf": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dist/fonts/fa-brands-400.ttf",
-		"oF": 0
-		},
-	"/dist/fonts/fa-brands-400.ttf.gz": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dist/fonts/fa-brands-400.ttf.gz",
-		"oF": 0
-		},
-	"/dist/fonts/fa-brands-400.woff": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dist/fonts/fa-brands-400.woff",
-		"oF": 0
-		},
-	"/dist/fonts/fa-brands-400.woff2": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dist/fonts/fa-brands-400.woff2",
-		"oF": 0
-		},
-	"/dist/fonts/fa-light-300.eot": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dist/fonts/fa-light-300.eot",
-		"oF": 0
-		},
-	"/dist/fonts/fa-light-300.eot.gz": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dist/fonts/fa-light-300.eot.gz",
-		"oF": 0
-		},
-	"/dist/fonts/fa-light-300.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/dist/fonts/fa-light-300.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/dist/fonts/fa-light-300.svg.gz": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dist/fonts/fa-light-300.svg.gz",
-		"oF": 0
-		},
-	"/dist/fonts/fa-light-300.ttf": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dist/fonts/fa-light-300.ttf",
-		"oF": 0
-		},
-	"/dist/fonts/fa-light-300.ttf.gz": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dist/fonts/fa-light-300.ttf.gz",
-		"oF": 0
-		},
-	"/dist/fonts/fa-light-300.woff": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dist/fonts/fa-light-300.woff",
-		"oF": 0
-		},
-	"/dist/fonts/fa-light-300.woff2": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dist/fonts/fa-light-300.woff2",
-		"oF": 0
-		},
-	"/dist/fonts/fa-regular-400.eot": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dist/fonts/fa-regular-400.eot",
-		"oF": 0
-		},
-	"/dist/fonts/fa-regular-400.eot.gz": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dist/fonts/fa-regular-400.eot.gz",
-		"oF": 0
-		},
-	"/dist/fonts/fa-regular-400.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/dist/fonts/fa-regular-400.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/dist/fonts/fa-regular-400.svg.gz": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dist/fonts/fa-regular-400.svg.gz",
-		"oF": 0
-		},
-	"/dist/fonts/fa-regular-400.ttf": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dist/fonts/fa-regular-400.ttf",
-		"oF": 0
-		},
-	"/dist/fonts/fa-regular-400.ttf.gz": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dist/fonts/fa-regular-400.ttf.gz",
-		"oF": 0
-		},
-	"/dist/fonts/fa-regular-400.woff": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dist/fonts/fa-regular-400.woff",
-		"oF": 0
-		},
-	"/dist/fonts/fa-regular-400.woff2": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dist/fonts/fa-regular-400.woff2",
-		"oF": 0
-		},
-	"/dist/fonts/fa-solid-900.eot": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dist/fonts/fa-solid-900.eot",
-		"oF": 0
-		},
-	"/dist/fonts/fa-solid-900.eot.gz": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dist/fonts/fa-solid-900.eot.gz",
-		"oF": 0
-		},
-	"/dist/fonts/fa-solid-900.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/dist/fonts/fa-solid-900.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/dist/fonts/fa-solid-900.svg.gz": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dist/fonts/fa-solid-900.svg.gz",
-		"oF": 0
-		},
-	"/dist/fonts/fa-solid-900.ttf": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dist/fonts/fa-solid-900.ttf",
-		"oF": 0
-		},
-	"/dist/fonts/fa-solid-900.ttf.gz": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dist/fonts/fa-solid-900.ttf.gz",
-		"oF": 0
-		},
-	"/dist/fonts/fa-solid-900.woff": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dist/fonts/fa-solid-900.woff",
-		"oF": 0
-		},
-	"/dist/fonts/fa-solid-900.woff2": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dist/fonts/fa-solid-900.woff2",
-		"oF": 0
-		},
-	"/dist/main.bundle.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/dist/main.bundle-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/dist/main.bundle.js.gz": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dist/main.bundle.js.gz",
-		"oF": 0
-		},
-	"/dist/styles.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/dist/styles-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/dist/styles.css.gz": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dist/styles.css.gz",
-		"oF": 0
-		},
 	"/existingscripts/customizer.js": {
 		"bF": 0,
 		"ft": 64,
@@ -2034,17 +1733,6 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/js/peoplecard.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/js/peoplecard-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"/js/slideboy.js": {
 		"bF": 0,
 		"ft": 64,
@@ -2128,16 +1816,6 @@
 		"oAP": "/build/node_modules",
 		"oF": 0
 		},
-	"/node_modules/../node_modules/@fortawesome/fontawesome-pro/css/all.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/node_modules/../node_modules/@fortawesome/fontawesome-pro/css/all-min.css",
-		"oF": 0,
-		"oS": 3
-		},
 	"/node_modules/../src/style.css": {
 		"aP": 1,
 		"bl": 0,
@@ -2147,6 +1825,17 @@
 		"oAP": "/node_modules/../src/style-min.css",
 		"oF": 0,
 		"oS": 3
+		},
+	"/node_modules/@fortawesome/fontawesome/index.es.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/node_modules/@fortawesome/fontawesome/index.es-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"/node_modules/@nmacarthur/imageboy/index-min.js": {
 		"bF": 0,
@@ -3516,17 +3205,6 @@
 		"oA": 0,
 		"oAP": "/single.php",
 		"oF": 0
-		},
-	"/src/main.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/src/main-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
 		},
 	"/src/style.css": {
 		"aP": 1,

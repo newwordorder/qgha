@@ -41,7 +41,7 @@ h3,
 h4,
 h5,
 h6 {
-  @include font-bold;
+  @include font-light;
   color: $color-heading;
 }
 
@@ -85,7 +85,7 @@ h6 {
   line-height: 0.875rem;
   text-transform: uppercase;
   color: $color-primary !important;
-
+  @include font-bold;
 }
 
 

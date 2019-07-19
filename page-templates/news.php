@@ -113,7 +113,9 @@ if ($featured->have_posts()):?>
       <?php
             // the query
             $the_query = new WP_Query( array(
-                'posts_per_page' => 9,
+				'posts_per_page' => 9,
+				'meta_key' => 'meta-checkbox',
+				'meta_value' => ''
             ));
           ?>
         <?php if ( $the_query->have_posts() ) : ?>
@@ -134,7 +136,7 @@ if ($featured->have_posts()):?>
                   $width = $backgroundImage['sizes'][ $size . '-width' ];
                   $height = $backgroundImage['sizes'][ $size . '-height' ];
                   ?>
-                    <img class="feature-column__image rounded" data-src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
+                    <div class="feature-column__image rounded" style="position:relative; padding-bottom:14rem;" ><div class="background-image-holder rounded"><img data-src="<?php echo $url; ?>" alt="<?php echo $alt; ?>" /></div></div>
 								<?php endif; ?>
 								<div class="blog-column__text">
                     <h6><?php $category = get_the_category(); echo $category[0]->name; ?></h6>

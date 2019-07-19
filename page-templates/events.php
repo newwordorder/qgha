@@ -134,7 +134,7 @@ if ($featured->have_posts()):?>
                   $width = $backgroundImage['sizes'][ $size . '-width' ];
                   $height = $backgroundImage['sizes'][ $size . '-height' ];
                   ?>
-                    <img class="feature-column__image rounded" data-src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
+                    <div class="feature-column__image rounded" style="position:relative; padding-bottom:14rem;" ><div class="background-image-holder rounded"><img data-src="<?php echo $url; ?>" alt="<?php echo $alt; ?>" /></div></div>
 								<?php endif; ?>
 								<div class="blog-column__text">
                     <h6><?php the_field('date'); ?></h6>

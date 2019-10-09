@@ -7,7 +7,7 @@
 		"uuidString": "8622B355-B521-46A5-A3B2-68A1898CA29C"
 		}
 	],
-"creatorBuild": "29156",
+"creatorBuild": "31491",
 "files": {
 	"/.gitattributes": {
 		"cB": 0,
@@ -46,7 +46,7 @@
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/all-min.css",
 		"oF": 0,
 		"oS": 3
@@ -1085,15 +1085,52 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/custom-editor-styles/styles-min.css",
+		"oF": 1,
+		"oS": 3
+		},
+	"/dist/main.bundle.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/dist/main.bundle-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dist/main.bundle.js.gz": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/dist/main.bundle.js.gz",
+		"oF": 0
+		},
+	"/dist/styles.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/dist/styles-min.css",
 		"oF": 0,
 		"oS": 3
+		},
+	"/dist/styles.css.gz": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/dist/styles.css.gz",
+		"oF": 0
 		},
 	"/existingscripts/customizer.js": {
 		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/existingscripts/customizer-min.js",
 		"oF": 0,
 		"sC": 3,
@@ -1120,7 +1157,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/existingscripts/navigation-min.js",
 		"oF": 0,
 		"sC": 3,
@@ -1131,7 +1168,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/existingscripts/skip-link-focus-fix-min.js",
 		"oF": 0,
 		"sC": 3,
@@ -1630,7 +1667,7 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/js/fa-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 0,
 		"tS": 0
 		},
@@ -1641,7 +1678,7 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/js/hammer.min-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 3,
 		"tS": 0
 		},
@@ -1683,7 +1720,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/js/main-min-min.js",
 		"oF": 0,
 		"sC": 3,
@@ -1694,9 +1731,9 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/js/main-min.js",
-		"oF": 2,
+		"oF": 0,
 		"sC": 3,
 		"tS": 1
 		},
@@ -1707,7 +1744,7 @@
 		"mi": 0,
 		"oA": 1,
 		"oAP": "/js/menuboy-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 3,
 		"tS": 0
 		},
@@ -1716,7 +1753,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/js/modal-min.js",
 		"oF": 0,
 		"sC": 3,
@@ -1749,7 +1786,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/js/themeboy-min.js",
 		"oF": 0,
 		"sC": 3,
@@ -1771,7 +1808,7 @@
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/layouts/content-sidebar-min.css",
 		"oF": 0,
 		"oS": 3
@@ -1781,7 +1818,7 @@
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/layouts/sidebar-content-min.css",
 		"oF": 0,
 		"oS": 3
@@ -1826,24 +1863,13 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"/node_modules/@fortawesome/fontawesome/index.es.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@fortawesome/fontawesome/index.es-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"/node_modules/@nmacarthur/imageboy/index-min.js": {
 		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 2,
-		"oAP": "/node_modules/@nmacarthur/imageboy/index-min.js",
+		"oA": 1,
+		"oAP": "/node_modules/@nmacarthur/imageboy/index-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -1853,8 +1879,8 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 2,
-		"oAP": "/node_modules/animejs/lib/anime.es.js",
+		"oA": 1,
+		"oAP": "/node_modules/animejs/lib/anime.es-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -1864,8 +1890,8 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 2,
-		"oAP": "/node_modules/micromodal/dist/micromodal.es.js",
+		"oA": 1,
+		"oAP": "/node_modules/micromodal/dist/micromodal.es-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -1883,8 +1909,8 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 2,
-		"oAP": "/node_modules/viewprt/dist/viewprt.esm.js",
+		"oA": 1,
+		"oAP": "/node_modules/viewprt/dist/viewprt.esm-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -2105,7 +2131,7 @@
 		"oAP": "/page-templates/home.php",
 		"oF": 0
 		},
-	"/page-templates/News.php": {
+	"/page-templates/news.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
@@ -2142,7 +2168,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/postcss.config-min-min.js",
 		"oF": 0,
 		"sC": 3,
@@ -2153,7 +2179,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/postcss.config-min.js",
 		"oF": 0,
 		"sC": 3,
@@ -2191,7 +2217,7 @@
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/rtl-min.css",
 		"oF": 0,
 		"oS": 3
@@ -3166,8 +3192,8 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "/src/style.css",
-		"oF": 2,
+		"oAP": "/style.css",
+		"oF": 0,
 		"oS": 3,
 		"uL": 1
 		},
@@ -3206,22 +3232,12 @@
 		"oAP": "/single.php",
 		"oF": 0
 		},
-	"/src/style.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/src/style-min.css",
-		"oF": 0,
-		"oS": 3
-		},
 	"/style.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/style-min.css",
 		"oF": 0,
 		"oS": 3
@@ -3263,7 +3279,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/webpack.config-min.js",
 		"oF": 0,
 		"sC": 3,
@@ -3299,6 +3315,7 @@
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
+	"allowInjectionReloads": 1,
 	"alwaysUseExternalServer": 0,
 	"animateCSSInjections": 1,
 	"autoBuildNewItems": 1,
@@ -3310,6 +3327,7 @@
 	"babelConfigType": 0,
 	"babelCustomPluginsList": "",
 	"babelCustomPresetsList": "",
+	"babelExcludeString": "/\\/node_modules\\//, /\\/core-js\\//, /\\/bower_components\\//",
 	"babelInsertModuleIDs": 0,
 	"babelModuleID": "",
 	"babelNoComments": 0,
@@ -3449,6 +3467,9 @@
 		"modules-umd": {
 			"active": 0
 			},
+		"named-capturing-groups-regex": {
+			"active": 0
+			},
 		"new-target": {
 			"active": 0
 			},
@@ -3480,6 +3501,9 @@
 			"active": 0
 			},
 		"parameters": {
+			"active": 0
+			},
+		"partial-application": {
 			"active": 0
 			},
 		"pipeline-operator": {
@@ -3574,11 +3598,10 @@
 			}
 		},
 	"babelRetainLines": 0,
+	"babelUseBuiltInsType": 0,
 	"bowerAbbreviatedPath": "bower_components",
-	"bowerAutoCreateInfoFile": 0,
-	"bowerInstallDevDependencies": 0,
-	"bowerSaveDependencies": 0,
-	"bowerSaveDevDependencies": 0,
+	"bowerForceLatestOnConflict": 1,
+	"bowerTargetDependencyListType": 1,
 	"bowerUseExactVersion": 0,
 	"browserRefreshDelay": 0,
 	"browserslistString": ">0.2%, last 2 versions, Firefox ESR, not dead",
@@ -4583,6 +4606,10 @@
 			"active": 0,
 			"optionString": "{'array': true, 'object': true}, {'enforceForRenamedProperties': false}"
 			},
+		"prefer-named-capture-group": {
+			"active": 0,
+			"optionString": ""
+			},
 		"prefer-numeric-literals": {
 			"active": 0,
 			"optionString": ""
@@ -5115,7 +5142,7 @@
 		"transpilerStyle": 1
 		},
 	"languageDefaultsCSS": {
-		"autoOutputAction": 1,
+		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*-min.css",
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
@@ -5161,7 +5188,7 @@
 		"quality": 100
 		},
 	"languageDefaultsJS": {
-		"autoOutputAction": 1,
+		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*-min.js",
 		"autoOutputPathRelativePath": "/min",
 		"autoOutputPathReplace1": "",
@@ -5336,6 +5363,11 @@
 		},
 	"languageDefaultsUserDefined": [
 		],
+	"npmAbbreviatedPath": "",
+	"npmCreatePackageLock": 1,
+	"npmInstallOptionalDependencies": 0,
+	"npmSaveExactVersion": 0,
+	"npmTargetDependencyListType": 1,
 	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",
 	"skippedFoldersString": "log, _logs, logs, _cache, cache, .idea, /storage/framework/sessions, node_modules",

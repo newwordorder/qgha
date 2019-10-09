@@ -39,7 +39,7 @@ const slideboy = () => {
       });
     });
 
-    changeColor(nextSlideNo);
+    changeColor(nextSlideNo); 
     activeSlide = nextSlideNo;
   };
 
@@ -62,7 +62,7 @@ const slideboy = () => {
 
   const animateOut = (currentSlide, callback) => {
     const image = currentSlide.querySelector('.image-container .img');
-    const text = currentSlide.querySelector('.page-title');
+    const text = currentSlide.querySelector('.page-header__content');
     anime({
       targets: [image, text],
       duration: 600,
@@ -77,7 +77,7 @@ const slideboy = () => {
 
   const animateIn = (nextSlide, callback) => {
     const image = nextSlide.querySelector('.image-container .img');
-    const text = nextSlide.querySelector('.page-title');
+    const text = nextSlide.querySelector('.page-header__content');
     image.style.opacity = '0';
     image.style.transform = 'translateY(5%)';
     text.style.opacity = '0';

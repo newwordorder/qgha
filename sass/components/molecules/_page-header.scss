@@ -118,9 +118,13 @@
     opacity: 0;
     left: 0;
 
+    &:not(.active) {
+      pointer-events: none;
+    }
+
     &.active {
       position: relative;
-      opacity: 1;
+      opacity: 1; 
     }
   }
 

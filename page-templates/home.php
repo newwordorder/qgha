@@ -37,6 +37,7 @@ $slides = get_field('slides');
         <div class="row slide slide--<?php echo $count; ?> <?php if($count == 1): echo 'active'; endif; ?>">
           <div class="col-md-7 page-header__content">
               <h1 class="page-title"><?php echo $text; ?></h1>
+              <?php get_template_part( 'page-templates/blocks/block-partials/buttons' ); ?>
           </div>
           <div class="col-md-5">
             <div class="image-container">

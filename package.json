@@ -28,9 +28,7 @@
     "@babel/preset-env": "^7.5.4",
     "@babel/preset-es2016": "^7.0.0-beta.53",
     "@babel/runtime": "^7.5.4",
-    "@fortawesome/fontawesome": "^1.1.8",
-    "@fortawesome/fontawesome-pro": "^5.9.0",
-    "@fortawesome/free-solid-svg-icons": "^5.9.0",
+    
     "@fullhuman/postcss-purgecss": "^1.2.0",
     "autoprefixer": "^9.5.1",
     "babel-loader": "^8.0.6",
